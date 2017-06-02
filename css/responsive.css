@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*------------------ Media Queries ------------------*/
+@media all and (max-width: 37.45em) {
+    #main-header h1{
+        font-size: 1.4em;
+        line-height: 1.2em;
+    }
+    
+    h2{
+        line-height: 1.2em;
+    }
+    
+    nav li{
+        font-size: 1.1em;
+        padding: 8px 4px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 100%;
+        padding:2px 0;
+    }
+}
+
+@media all and (min-width: 37.5em){
+    h2{
+        line-height: 1.2em;
+    }
+    
+    nav li{
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 100%;
+        padding:5px 0;
+    }
+}
+
+@media all and (min-width: 53.75em){
+    nav li{
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 100%;
+        padding:5px;
+    }
+}
+
+@media all and (min-width: 58.75em){
+    nav li{
+        font-size: 1.2em;
+        padding: 15px 40px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 48%;
+        padding:5px;
+    }
+    
+    #duq-profile{
+        margin-bottom: 85px;
+    }
+    
+    #about-paragraph{
+        width: 51%;
+    }
+    
+}
+
+@media all and (min-width: 81.25em){
+    nav li{
+        font-size: 1.2em;
+        padding: 15px 50px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 49%;
+    }
+    
+    .photo-small{
+        margin-bottom: 85px;
+    }
+}
