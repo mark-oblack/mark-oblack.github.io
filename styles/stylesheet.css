@@ -1,0 +1,352 @@
+/*------------------ Fonts ------------------*/
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Questrial';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------ Media Queries ------------------*/
+@media all and (max-width: 37.45em) {
+    #main-header h1{
+        font-size: 1.4em;
+        line-height: 1.2em;
+    }
+    
+    h2{
+        line-height: 1.2em;
+    }
+    
+    #nav li{
+        font-size: 1.1em;
+        padding: 8px 4px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 100%;
+        padding:2px 0;
+    }
+}
+
+@media all and (min-width: 37.5em){
+    h2{
+        line-height: 1.2em;
+    }
+    
+    #nav li{
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 100%;
+        padding:5px 0;
+    }
+}
+
+@media all and (min-width: 53.75em){
+    #nav li{
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 100%;
+        padding:5px;
+    }
+}
+
+@media all and (min-width: 58.75em){
+    #nav li{
+        font-size: 1.2em;
+        padding: 15px 40px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 48%;
+        padding:5px;
+    }
+    
+    #duq-profile{
+        margin-bottom: 85px;
+    }
+    
+    #about-paragraph{
+        width: 51%;
+    }
+    
+}
+
+@media all and (min-width: 81.25em){
+    #nav li{
+        font-size: 1.2em;
+        padding: 15px 50px;
+    }
+    
+    .poke-desktop, .logo{
+        width: 49%;
+    }
+    
+    .photo-small{
+        margin-bottom: 85px;
+    }
+}
+
+/*------------------ Body Style ------------------*/
+body{
+    background-color: #ECF0F1;
+    color: #283744;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
+}
+
+/*------------------ Links ------------------*/
+
+a{
+    text-decoration: none;
+    color: #3498DB;
+}
+
+a:hover{
+    color:#E74C3C;
+    transition: 0.2s;
+}
+
+a:visited{
+    color:#8E44AD;
+}
+
+/*------------------ Nav Bar ------------------*/
+#nav ul{
+    background-color:#283744;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #ECF0F1;
+}
+
+#nav a:hover{
+    color:#E74C3C;
+}
+
+#nav li{
+    display:inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ECF0F1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#nav .dropdown-content a {
+    color: #283744;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #E74C3C
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#nav .active{
+    color: #E67E22;
+}
+
+/*------------------ Main Header ------------------*/
+#main-header{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    color: #16A085;
+    text-align:center;
+    padding: 20px 0;
+}
+
+.special{
+    color:#283744;
+}
+
+/*------------------ Main Content ------------------*/
+#wrapper{
+    width:100%;
+    height:auto;
+    line-height: 1.5em;
+}
+
+#main-banner{
+    width:100%;
+    padding: 14px 0 0 0;
+}
+
+#main-content{
+    margin: 0 auto;
+    width: 88%
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+    color: #16A085;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
+
+h1, h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+.return-top{
+    display: block;
+    width: 100%;
+    clear:both;
+    padding: 10px 0 10px 15px;
+}
+
+/*------------------ Table ------------------*/
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin:0 auto;
+}
+
+th{
+    font-weight: bold;
+}
+
+td, th {
+    border: 3px solid #3498DB;
+    text-align: left;
+    padding: 8px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #3498DB;
+}
+
+/*------------------ Forms ------------------*/
+form{
+    margin:0 auto;
+    width: 370px;
+    padding: 15px 0;
+}
+
+input[type=text], input[type=email]{
+    display:block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea{
+    display:block;
+    width: 100%;
+    height: 250px;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: #16A085;
+    border: none;
+    color: #ECF0F1;
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 2px solid #283744;
+}
+
+input[type=submit]:hover{
+    background-color:#E74C3C;
+    transition:0.2s;
+}
+
+/*------------------ Footer ------------------*/
+footer{
+    text-align: center;
+    display: block;
+    clear:right;
+    padding: 5px 0;
+}

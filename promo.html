@@ -6,18 +6,34 @@
         <title>MOB | Design & Photography</title>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        <style>
+            img{
+                display:inline-block;
+                margin:0;
+                padding:5px 5px;
+            }
+            
+            #promo-materials li{
+                display:inline;
+            }
+            
+            #promo-materials{
+                padding:0;
+                list-style-type: none;
+            }
+        </style>
     </head>
 
     <body>
         <header id="main-header">
             <h1>Mark O'Black <span class="special">&#124;</span> Design and Photography</h1>
         </header>
-        <div id="nav" class="topnav">
+        <div id="nav"><!--can replace ul with nav element when other pages are made-->
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-                    <a href="#artwork" class="dropbtn">Artwork</a>
+                    <a class="active" href="#artwork" class="dropbtn active">Artwork</a>
                     <div class="dropdown-content">
                         <a href="logos.html">Logos &amp; Flat Design</a>
                         <a href="promo.html">Promotional Materials</a>
@@ -30,11 +46,14 @@
         </div>
         <div id="wrapper">
             <div id="main-content">
-                <h2>Welcome</h2>
-                <p>It appears that you have stumbled upon my design and photography site. Let me be the first to welome you! On this site, you will find a variety of projects that I have worked on over the past year. Some of these projects include logos, promotional materials, and photography. In addition, each month I will select a different theme and design different types of artwork centered on the theme. Now that the cordials are out of the way, feel free to embark on a minmalist artwork adventure!</p>
-                <h2>Theme of the Month: Gotta Catch 'Em All!</h2>
-                <p>For the month of October, my design theme is going to be Pokemon: Gotta Catch 'Em All. My focus will be on designing desktop wallpapers with an minimal abstract approach to the Pokemon themselves. Below are a few sample pieces. To view the entire collection, click on the Monthly Theme tab at the top or click <a href="monthly.html">here.</a></p>
-                <img id="main-banner" src="images/pokemon/main-banner.png">
+                <h2>Promotional Materials</h2>
+                <ul id="promo-materials">
+                    <li><img src="images/promo/cyber_security_2016_external.jpg" class="logo" alt="Cyber Security Event Poster 1"></li>
+                    <li><img src="images/promo/victory-lap-racing-logo.png" class="logo" alt="Victory Lap Racing Poster"></li>
+                    <li><img src="images/promo/mummy-poster.jpg" class="logo" alt="Cyber Security Mummy Poster"></li>
+                    <li><img src="images/promo/cyber_security_2016_internal.jpg" class="logo" alt="Cyber Security Event Poster 2"></li>
+                    <li><img src="images/promo/spider-poster.jpg" class="logo" alt="Cyber Security Spider Poster"></li>
+                </ul>
             </div> <!--main-content-->
             <a class="return-top" href=#main-header>Return to Top</a>
         </div>
