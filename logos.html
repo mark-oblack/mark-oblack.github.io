@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MOB | Design & Photography</title>
-        <meta name="viewport" content="width=device-width"/>
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <style>
             img{
                 display:inline-block;
@@ -28,12 +29,12 @@
         <header id="main-header">
             <h1>Mark O'Black <span class="special">&#124;</span> Design and Photography</h1>
         </header>
-        <div id="nav"><!--can replace ul with nav element when other pages are made-->
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-                    <a class="active" href="#artwork" class="dropbtn active">Artwork</a>
+                    <a href="#artwork">Artwork</a>
                     <div class="dropdown-content">
                         <a href="logos.html">Logos &amp; Flat Design</a>
                         <a href="promo.html">Promotional Materials</a>
@@ -43,20 +44,26 @@
                 <li><a href="monthly.html">Monthly Theme</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
         <div id="wrapper">
             <div id="main-content">
                 <h2>Logos &amp; Flat Design</h2>
                 <ul id="logos">
-                    <li><img src="images/logos/flat-design-darthvader.png" class="logo" alt="Flat Art Darth Vader"></li>
+                    <li><img src="images/logos/SummerTweet.png" class="logo" alt="Summer Tweet"></li>
                     <li><img src="images/logos/flat-design-goldfish.jpg" class="logo" alt="Flat Art Goldfish"></li>
                     <li><img src="images/logos/steel-city-logo-2.png" class="logo" alt="Steel City Logo"></li>
                     <li><img src="images/logos/flat-design-mountain-final.jpg" class="logo" alt="Flat Art Mountain"></li>
-                    <li><img src="images/logos/run.png" class="logo" alt="RUN Logo"></li>
+                    <li><img src="images/logos/pumpkin-desktop.png" class="logo" alt="Pumpkin Faces Design"></li>
                     <li><img src="images/logos/flat-spaceship-design-final.jpg" class="logo" alt="Flat Art Rocket"></li>
+                    <li><img src="images/logos/flat-design-easter.png" class="logo" alt="Easter Tweet"></li>
+                    <li><img src="images/logos/flatArtFlag.png" class="logo" alt="Memorial Day Tweet"></li>
+                    <li><img src="images/logos/DataPrivacyDayLogo2.jpg" class="logo" alt="Flat Art Browser"></li>
+                    <li><img src="images/logos/DataPrivacyDayLogo8.jpg" class="logo" alt="Infected Tablet Design"></li>
+                    <li><img src="images/logos/flat-design-lighthouse.png" class="logo" alt="Flat Art Light House"></li>
+                    <li><img src="images/logos/phishing_infographic.png" class="logo" alt="Phishing Infographic"></li>
                 </ul>
             </div> <!--main-content-->
-            <a class="return-top" href=#main-header>Return to Top</a>
+            <a class="return-top" href="#main-header">Return to Top</a>
         </div>
         <footer>
             <address>
