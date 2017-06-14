@@ -100,7 +100,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 }
 
 
-nav .active {
+.active {
     color: #E67E22;
 }
 
@@ -236,6 +236,18 @@ footer{
     padding: 5px 0;
 }
 
+
+
+/*------------------ About Page ------------------*/
+#profile-pic {
+	width:45%;
+	float:right;
+	padding:0 20px 0px 20px;
+}
+
+.content-about p {
+	padding-bottom: 10px;
+}
 
 
 
