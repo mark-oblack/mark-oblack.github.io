@@ -31,6 +31,10 @@ h3 {
     font-size: 1.2em;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 
 /*------------------ Links ------------------*/
@@ -100,7 +104,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 }
 
 
-nav .active {
+.active {
     color: #E67E22;
 }
 
@@ -234,6 +238,58 @@ footer{
     display: block;
     clear:right;
     padding: 5px 0;
+}
+
+
+
+/*------------------ About Page ------------------*/
+#profile-pic {
+	width:45%;
+	float:right;
+	padding:0 20px 0px 20px;
+}
+
+.content-about p {
+	padding-bottom: 10px;
+}
+
+
+
+/*------------------ Monthly Theme Page ------------------*/
+#wallpapers li {
+	display:inline;
+} /* Will move these to responsive.css so that two images sit side by side*/
+
+#wallpapers {
+	list-style-type: none;
+} /* Will move these to responsive.css so that two images sit side by side*/
+
+#wallpapers img{
+	padding: 5px 0px 5px;
+}
+
+
+
+/*------------------ Logos Page ------------------*/
+#logos-gallery {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+#logos-gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+  	color: #bdc3c7; 
+}
+
+#logos-gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 1em;
+  color: #bdc3c7;
 }
 
 
