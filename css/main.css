@@ -286,13 +286,28 @@ footer{
 }
 
 #logos-gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 1em;
-  color: #bdc3c7;
+	margin: 0;
+	padding: 5%;
+	font-size: 1em;
+	color: #bdc3c7;
 }
 
 
+
+/*------------------ Promotional Materials Page ------------------*/
+#promo-materials {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+#promo-materials li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+  	color: #bdc3c7; 
+}
 
 
 
