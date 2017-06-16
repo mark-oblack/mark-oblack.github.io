@@ -256,24 +256,19 @@ footer{
 
 
 /*------------------ Monthly Theme Page ------------------*/
-#wallpapers li {
-	display:inline;
-} /* Will move these to responsive.css so that two images sit side by side*/
-
-#wallpapers {
+#wallpapers-gallery {
 	list-style-type: none;
 } /* Will move these to responsive.css so that two images sit side by side*/
 
-#wallpapers img{
-	padding: 5px 0px 5px;
-}
+#wallpapers-gallery li {
+	display:inline;
+} /* Will move these to responsive.css so that two images sit side by side*/
+
 
 
 
 /*------------------ Logos Page ------------------*/
 #logos-gallery {
-	margin: 0;
-	padding:0;
 	list-style: none;
 }
 
@@ -295,30 +290,33 @@ footer{
 
 
 /*------------------ Promotional Materials Page ------------------*/
-#promo-materials {
-	margin: 0;
-	padding:0;
+#promo-gallery {
 	list-style: none;
 }
 
-#promo-materials li {
+#promo-gallery li {
 	float: left;
 	width: 45%;
 	margin: 2.5%;
 	background-color: #f5f5f5;
   	color: #bdc3c7;
+}
+
+#promo-gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 1em;
+	color: #bdc3c7;
 }
 
 
 
 /*------------------ Photography Page ------------------*/
-#photos {
-	margin: 0;
-	padding:0;
+#photos-gallery {
 	list-style: none;
 }
 
-#photos li {
+#photos-gallery li {
 	float: left;
 	width: 45%;
 	margin: 2.5%;
@@ -326,6 +324,12 @@ footer{
   	color: #bdc3c7;
 }
 
+#photos-gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 1em;
+	color: #bdc3c7;
+}
 
 
 
