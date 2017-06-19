@@ -103,7 +103,6 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
     display: block;
 }
 
-
 .active {
     color: #E67E22;
 }
@@ -111,7 +110,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 
 
 /*------------------ Main Header ------------------*/
-#main-header{
+#main-header {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     color: #16A085;
@@ -119,36 +118,69 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
     padding: 20px 0;
 }
 
-.special{
+.special {
     color:#283744;
 }
 
 
 
 /*------------------ Main Content ------------------*/
-#wrapper{
-    width:100%;
-    height:auto;
+#wrapper {
+    width: 100%;
     line-height: 1.5em;
 }
 
-#main-banner{
-    width: 100%;
-    padding: 14px 0 0 0;
-}
-
-#main-content{
+#main-content {
     margin: 0 auto;
-    width: 88%
+    width: 88%;
 }
 
-.return-top{
+#main-banner {
+	display: block;
+	margin: 0 auto;
+    padding-top: 10px;
+	width: 88%;
+}
+
+/*.return-top {
     display: block;
     width: 100%;
     clear:both;
     padding: 10px 0 10px 15px;
+}*/
+
+.return-top img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 50px;
 }
 
+
+
+/*------------------ Main Styles ------------------*/
+#logos-gallery,
+#promo-gallery,
+#photos-gallery {
+	list-style: none;
+}
+
+#logos-gallery li,
+#promo-gallery li,
+#photos-gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+}
+
+#logos-gallery li a p,
+#promo-gallery li a p,
+#photos-gallery li a p {
+	padding: 5%;
+	font-size: 1.1em;
+	color: #95a5a6;
+}
 
 
 /*------------------ Table ------------------*/
@@ -160,7 +192,7 @@ table {
     margin:0 auto;
 }
 
-th{
+th {
     font-weight: bold;
 }
 
@@ -178,13 +210,13 @@ tr:nth-child(even) {
 
 
 /*------------------ Forms ------------------*/
-form{
+form {
     margin:0 auto;
-    width: 370px;
+    width: 350px; /* could make a percent?*/
     padding: 15px 0;
 }
 
-input[type=text], input[type=email]{
+input[type=text], input[type=email] {
     display:block;
     width: 100%;
     padding: 12px 20px;
@@ -194,7 +226,7 @@ input[type=text], input[type=email]{
     font-family: 'Open Sans', sans-serif;
 }
 
-textarea{
+textarea {
     display:block;
     width: 100%;
     height: 250px;
@@ -207,7 +239,7 @@ textarea{
     resize: none;
 }
 
-input[type=submit]{
+input[type=submit] {
     background-color: #16A085;
     border: none;
     color: #ECF0F1;
@@ -225,7 +257,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border: 2px solid #283744;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
     background-color:#E74C3C;
     transition:0.2s;
 }
@@ -233,12 +265,14 @@ input[type=submit]:hover{
 
 
 /*------------------ Footer ------------------*/
-footer{
+footer {
     text-align: center;
     display: block;
     clear:right;
     padding: 5px 0;
 }
+
+
 
 
 
@@ -267,69 +301,8 @@ footer{
 
 
 
-/*------------------ Logos Page ------------------*/
-#logos-gallery {
-	list-style: none;
-}
-
-#logos-gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
-	background-color: #f5f5f5;
-  	color: #bdc3c7; 
-}
-
-#logos-gallery li a p {
-	margin: 0;
-	padding: 5%;
-	font-size: 1em;
-	color: #bdc3c7;
-}
 
 
-
-/*------------------ Promotional Materials Page ------------------*/
-#promo-gallery {
-	list-style: none;
-}
-
-#promo-gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
-	background-color: #f5f5f5;
-  	color: #bdc3c7;
-}
-
-#promo-gallery li a p {
-	margin: 0;
-	padding: 5%;
-	font-size: 1em;
-	color: #bdc3c7;
-}
-
-
-
-/*------------------ Photography Page ------------------*/
-#photos-gallery {
-	list-style: none;
-}
-
-#photos-gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
-	background-color: #f5f5f5;
-  	color: #bdc3c7;
-}
-
-#photos-gallery li a p {
-	margin: 0;
-	padding: 5%;
-	font-size: 1em;
-	color: #bdc3c7;
-}
 
 
 
