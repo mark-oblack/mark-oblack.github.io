@@ -151,6 +151,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 
 .return-top img {
 	display: block;
+	clear: both;
 	margin: 0 auto;
 	padding-top: 20px;
 	width: 50px;
@@ -265,10 +266,10 @@ input[type=submit]:hover {
 
 
 /*------------------ Footer ------------------*/
-footer {
+footer p {
     text-align: center;
     display: block;
-    clear:right;
+    clear: right;
     padding: 5px 0;
 }
 
