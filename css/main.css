@@ -10,8 +10,13 @@
 
 
 /*------------------ General Styles ------------------*/
+
+* {
+	box-sizing: border-box;
+}
 body {
     background-color: #ECF0F1;
+	background-image: linear-gradient(#ECF0F1, #d8eaef);
     color: #283744;
     font-family: 'Questrial', sans-serif;
 }
@@ -19,12 +24,13 @@ body {
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     color: #16A085;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     padding: 15px 0;
 }
 
-h1, h2 {
-    font-size: 1.7em;
+h2 {
+    font-size: 1.6em;
+	margin: 5px 0;
 }
 
 h3 {
@@ -71,7 +77,8 @@ nav ul li {
 	padding: 10px;
 }
 
-nav a {
+nav li a {
+	font-size: 1em;
     text-decoration: none;
     color: #ECF0F1;
 }
@@ -112,10 +119,12 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 /*------------------ Main Header ------------------*/
 #main-header {
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     color: #16A085;
     text-align:center;
     padding: 20px 0;
+	width: 95%;
+	margin: 0 auto;
 }
 
 .special {
@@ -126,13 +135,19 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 
 /*------------------ Main Content ------------------*/
 #wrapper {
-    width: 100%;
+    width: 90%;
+	margin: 0 auto;
     line-height: 1.5em;
 }
 
 #main-content {
     margin: 0 auto;
     width: 88%;
+}
+
+#main-content p {
+	line-height: 1.6em;
+	padding-bottom: 1em;
 }
 
 #main-banner {
@@ -142,14 +157,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 	width: 88%;
 }
 
-/*.return-top {
-    display: block;
-    width: 100%;
-    clear:both;
-    padding: 10px 0 10px 15px;
-}*/
-
-.return-top img {
+.return-top {
 	display: block;
 	clear: both;
 	margin: 0 auto;
@@ -184,12 +192,13 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 }
 
 
+
 /*------------------ Table ------------------*/
 
 table {
     font-family: 'Open Sans', sans-serif;
     border-collapse: collapse;
-    width: 60%;
+    width: 100%;
     margin:0 auto;
 }
 
@@ -275,29 +284,25 @@ footer p {
 
 
 
-
-
 /*------------------ About Page ------------------*/
 #profile-pic {
-	width:45%;
-	float:right;
-	padding:0 20px 0px 20px;
+	width: 60%;
+	float: right;
+	padding: 0 20px;
 }
-
-.content-about p {
-	padding-bottom: 10px;
-}
-
 
 
 /*------------------ Monthly Theme Page ------------------*/
-#wallpapers-gallery {
+#wallpapers-gallery ul {
 	list-style-type: none;
-} /* Will move these to responsive.css so that two images sit side by side*/
+
+}
 
 #wallpapers-gallery li {
-	display:inline;
-} /* Will move these to responsive.css so that two images sit side by side*/
+	display: inline;
+}
+
+
 
 
 
