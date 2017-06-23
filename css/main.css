@@ -35,6 +35,7 @@ h2 {
 
 h3 {
     font-size: 1.2em;
+	margin-bottom: 10px;
 }
 
 img {
@@ -55,11 +56,9 @@ a:hover {
     transition: 0.2s;
 }
 
-/* a:visited {
+#main-content a:visited {
     color:#8E44AD;
 }
-
-Affects nav links as well */
 
 
 
@@ -156,15 +155,6 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
     padding-top: 10px;
 	width: 88%;
 }
-
-.return-top {
-	display: block;
-	clear: both;
-	margin: 0 auto;
-	padding-top: 20px;
-	width: 50px;
-}
-
 
 
 /*------------------ Main Styles ------------------*/
@@ -275,11 +265,59 @@ input[type=submit]:hover {
 
 
 /*------------------ Footer ------------------*/
+
+footer{
+	width: 100%;
+	text-align: center;
+}
+
 footer p {
-    text-align: center;
     display: block;
-    clear: right;
-    padding: 5px 0;
+    padding-top: 20px;
+	clear: both;
+}
+
+
+
+/*------------------ Icons ------------------*/
+
+.return-top {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 50px;
+}
+
+footer .fa {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 50px;
+    vertical-align: middle;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+	border-radius: 50%;
+	margin: 0 8px;
+}
+
+.fa-twitter {
+  	background: #55ACEE;
+  	color: white;
+}
+
+.fa-facebook {
+	background: #3B5998;
+  	color: white;
+}
+
+.fa-envelope {
+	background: #dd4b39;
+  	color: white;
+}
+
+.return-top:hover, .fa:hover {
+    opacity: 0.7;
 }
 
 

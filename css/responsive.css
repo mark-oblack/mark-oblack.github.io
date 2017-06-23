@@ -34,7 +34,7 @@
 	}
 	
     nav li a {
-        font-size: 1.2em;
+        font-size: 1.15em;
     }
     
     .poke-desktop {
@@ -52,12 +52,16 @@
 		font-size: 1.7em;
 	}
 	
+	h3{
+		font-size: 1.4em;
+	}
+	
 	p {
 		font-size: 1.1em;
 	}
 	
     nav li a {
-        font-size: 1.25em;
+        font-size: 1.2em;
 		padding: 0 10px;
     }
 	
@@ -68,6 +72,10 @@
     .poke-desktop {
         width: 100%;
     }
+	
+	footer .fa {
+		float: right;
+	}
 }
 
 @media all and (min-width: 58.75em){
@@ -80,12 +88,16 @@
 		line-height: 1.5em;
 	}
 	
+	h3{
+		font-size: 1.45em;
+	}
+	
 	p {
 		font-size: 1.15em;
 	}
 	
     nav li a {
-        font-size: 1.35em;
+        font-size: 1.3em;
 		padding: 0 15px;
     }
 	
@@ -110,8 +122,12 @@
         line-height: 1.2em;
     }
 	
+	h3{
+		font-size: 1.5em;
+	}
+	
     nav li a {
-        font-size: 1.5em;
+        font-size: 1.4em;
 		padding: 0 25px;
     }
 	
