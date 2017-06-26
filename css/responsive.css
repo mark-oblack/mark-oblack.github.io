@@ -150,6 +150,10 @@
     .poke-desktop {
         width: 49%;
     }
+	
+	#profile-pic {
+		width: 60%;
+	}
     
     /*.photo-small{
         margin-bottom: 85px;
