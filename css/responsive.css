@@ -36,6 +36,10 @@
     nav li a {
         font-size: 1.15em;
     }
+	
+	form {
+		width: 70%;
+	}
     
     .poke-desktop {
         width: 100%;
@@ -67,6 +71,10 @@
 	
 	table {
 		width: 80%;
+	}
+	
+	form {
+		width: 55%;
 	}
     
     .poke-desktop {
@@ -104,12 +112,20 @@
 	table {
 		width: 70%;
 	}
+	
+	form {
+		width: 45%;
+	}
     
     .poke-desktop {
         width: 49.7%;
 		padding: 5px 7px;
 
-    }  
+    }
+	
+	#profile-pic {
+		width: 425px;
+	}
 }
 
 @media all and (min-width: 81.25em){
@@ -135,6 +151,10 @@
 		width: 60%;
 	}
 	
+	form {
+		width: 40%;
+	}
+	
 	#logos-gallery li,
 	#promo-gallery li,
 	#photos-gallery li {
@@ -152,7 +172,7 @@
     }
 	
 	#profile-pic {
-		width: 60%;
+		width: 500px;
 	}
     
     /*.photo-small{

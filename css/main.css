@@ -212,7 +212,7 @@ tr:nth-child(even) {
 /*------------------ Forms ------------------*/
 form {
     margin:0 auto;
-    width: 350px; /* could make a percent?*/
+    width: 100%;
     padding: 15px 0;
 }
 
