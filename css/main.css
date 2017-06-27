@@ -157,28 +157,38 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 }
 
 
-/*------------------ Main Styles ------------------*/
+
+/*------------------ Masonry Grid ------------------*/
+
 #logos-gallery,
 #promo-gallery,
 #photos-gallery {
 	list-style: none;
 }
 
-#logos-gallery li,
-#promo-gallery li,
-#photos-gallery li {
-	float: left;
-	width: 45%;
-	margin: 2.5%;
-	background-color: #f5f5f5;
+#container {
+	width: 100%;
+	margin: 0 auto;
 }
 
-#logos-gallery li a p,
-#promo-gallery li a p,
-#photos-gallery li a p {
-	padding: 5%;
-	font-size: 1.1em;
-	color: #95a5a6;
+#logos-gallery,
+#photos-gallery,
+#promo-gallery {
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+	width: 100%;
+}
+
+#logos-gallery img,
+#photos-gallery img,
+#promo-gallery img {
+	display: inline-block;
+	margin-bottom: 4px;
+	width: 100%;
 }
 
 
@@ -339,11 +349,6 @@ footer .fa {
 #wallpapers-gallery li {
 	display: inline;
 }
-
-
-
-
-
 
 
 

@@ -81,6 +81,14 @@
         width: 100%;
     }
 	
+	#logos-gallery,
+	#photos-gallery,
+	#promo-gallery {
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+	}
+	
 	footer .fa {
 		float: right;
 	}
@@ -153,18 +161,6 @@
 	
 	form {
 		width: 40%;
-	}
-	
-	#logos-gallery li,
-	#promo-gallery li,
-	#photos-gallery li {
-		width: 28%;
-	}
-	
-	#logos-gallery li a p,
-	#promo-gallery li a p,
-	#photos-gallery li a p {
-		font-size: 1.25em;
 	}
     
     .poke-desktop {
