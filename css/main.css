@@ -193,6 +193,8 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 
 
 
+
+
 /*------------------ Table ------------------*/
 
 table {
@@ -243,7 +245,6 @@ textarea {
     padding: 8px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     resize: none;
@@ -303,7 +304,6 @@ footer .fa {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 50px;
-    vertical-align: middle;
 	height: 50px;
 	width: 50px;
 	text-decoration: none;
@@ -349,10 +349,6 @@ footer .fa {
 #wallpapers-gallery li {
 	display: inline;
 }
-
-
-
-
 
 
 
