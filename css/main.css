@@ -19,6 +19,7 @@ body {
 	background-image: linear-gradient(#ECF0F1, #d8eaef);
     color: #283744;
     font-family: 'Questrial', sans-serif;
+	height: 100%;
 }
 
 h1, h2, h3 {
