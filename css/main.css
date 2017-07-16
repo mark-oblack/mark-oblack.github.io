@@ -14,6 +14,7 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
     background-color: #ECF0F1;
 	/*background-image: linear-gradient(#ECF0F1, #d8eaef);*/
@@ -22,7 +23,7 @@ body {
 	height: 100%;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Oswald', sans-serif;
     color: #16A085;
     letter-spacing: .5px;
@@ -118,17 +119,18 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 
 /*------------------ Main Header ------------------*/
 #main-header {
+	background-color:#283744;
+	color: #ECF0F1;
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
-    color: #16A085;
     text-align:center;
+	letter-spacing: .5px;
     padding: 20px 0;
-	width: 95%;
 	margin: 0 auto;
 }
 
 .special {
-    color:#283744;
+    color: #16A085;
 }
 
 
@@ -146,7 +148,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 }
 
 #main-content p {
-	line-height: 1.6em;
+	line-height: 1.5em;
 	padding-bottom: 1em;
 }
 
@@ -161,12 +163,6 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 
 /*------------------ Masonry Grid ------------------*/
 
-#logos-gallery,
-#promo-gallery,
-#photos-gallery {
-	list-style: none;
-}
-
 #container {
 	width: 100%;
 	margin: 0 auto;
@@ -175,6 +171,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 #logos-gallery,
 #photos-gallery,
 #promo-gallery {
+	list-style: none;
 	-moz-column-count: 2;
 	-moz-column-gap: 10px;
 	-webkit-column-count: 2;
@@ -191,8 +188,6 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
 	margin-bottom: 4px;
 	width: 100%;
 }
-
-
 
 
 
