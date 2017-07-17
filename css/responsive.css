@@ -22,6 +22,23 @@
         width: 100%;
         padding-bottom: 5px;
     }
+	
+	footer .fa {
+		vertical-align: middle;
+		text-align: center;
+		line-height: 50px;
+		font-size: 33px;
+		height: 50px;
+		width: 50px;
+	}
+	
+	.return-top {
+		display: block;
+		clear: both;
+		margin: 0 auto;
+		padding: 20px 0;
+		width: 50px;
+	}
 
 }
 
@@ -63,8 +80,11 @@
 		column-count: 3;
 	}
 	
-	footer .fa {
-
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding-right: 20px;
 	}
 }
 
