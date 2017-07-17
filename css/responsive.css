@@ -32,6 +32,10 @@
 		width: 50px;
 	}
 	
+	footer .fa-github {
+		font-size: 58px;
+	}
+	
 	.return-top {
 		display: block;
 		clear: both;

@@ -311,9 +311,9 @@ footer .fa {
 	margin: 0 8px;
 }
 
-.fa-github {
-	background: #24292e;
-	color: white;
+footer .fa-github {
+	color: #24292e;
+	font-size: 40px;
 }
 
 .fa-twitter {
