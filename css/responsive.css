@@ -27,7 +27,7 @@
 
 @media all and (min-width: 53.75em){
 	h1{
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	
 	h2 {
@@ -39,7 +39,7 @@
 	}
 	
     nav li a {
-        font-size: 1.2em;
+        font-size: 1.25em;
 		padding: 0 10px;
     }
 	
@@ -64,13 +64,13 @@
 	}
 	
 	footer .fa {
-		float: right;
+
 	}
 }
 
 @media all and (min-width: 58.75em){
 	h1{
-		font-size: 1.4em;
+		font-size: 1.3em;
 	}
 	
 	h2 {
@@ -83,8 +83,7 @@
 	}
 	
     nav li a {
-        font-size: 1.3em;
-		padding: 0 15px;
+		padding: 0 13px;
     }
 	
 	table {
@@ -108,11 +107,10 @@
 
 @media all and (min-width: 81.25em){
 	h1{
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 	
     nav li a {
-        font-size: 1.4em;
 		padding: 0 25px;
     }
 	
