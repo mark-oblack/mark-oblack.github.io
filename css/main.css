@@ -17,7 +17,7 @@
 
 body {
     background-color: #ECF0F1;
-	background-image: linear-gradient(#ECF0F1, #d8eaef);
+	/*background-image: linear-gradient(#ECF0F1, #d8eaef);*/
     color: #283744;
 	display: flex;
 	min-height: 100vh;
@@ -71,7 +71,7 @@ a:hover {
 /*------------------ Nav Bar ------------------*/
 nav ul {
     background-color:#283744;
-/*	border-bottom: solid 3px #E67E22;*/
+	border-bottom: solid 3px #E67E22;
     list-style-type: none;
     margin: 0;
     padding: 0;
