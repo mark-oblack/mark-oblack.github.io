@@ -8,23 +8,28 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/myscripts.js"></script>
     </head>
 
     <body>
         <header id="main-header">
             <h1>Mark O'Black <span class="special">&#124;</span> Web & Graphic Design</h1>
         </header>
-        <nav>
+        <nav class="navbar" id="topNav">
             <ul>
+               	<li class="navmenu" >
+               		<a href="javascript:void(0);" onclick="navResponsive()">&#9776;</a>
+               	</li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
                     <a class="active" href="#artwork">Artwork</a>
-                    <div class="dropdown-content">
-                        <a href="logos.html">Logos &amp; Flat Design</a>
-                        <a href="promo.html">Promotional Materials</a>
-                        <a href="photography.html">Photography</a>
-                    </div>
+                    <ul class="dropdown-content">
+						<li><a href="logos.html">Logos &amp; Flat Design</a></li>
+						<li><a href="promo.html">Promotional Materials</a></li>
+						<li><a href="photography.html">Photography</a></li>
+                    </ul>
                 </li>
                 <li><a href="monthly.html">Monthly Theme</a></li>
                 <li><a href="contact.html">Contact</a></li>

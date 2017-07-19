@@ -69,27 +69,45 @@ a:hover {
 
 
 /*------------------ Nav Bar ------------------*/
-nav ul {
-    background-color:#283744;
+/* For scrolling navbar */
+/*.navbar.fixed {
+	left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}*/
+
+.navbar {
+	background-color: #283744;
 	border-bottom: solid 3px #E67E22;
+	overflow: hidden;
+}
+
+.navbar li.navmenu {
+	display: none;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
+.navbar ul li {
     display:inline-block;
+	position: relative;
 	padding: 10px;
 }
 
-nav li a {
-	font-size: 1em;
+.navbar li a {
+	background-color: #283744;
+	font-size: 1.2em;
     text-decoration: none;
     color: #ECF0F1;
 }
 
-nav a:hover {
+.navbar a:hover {
     color:#E74C3C;
 }
 
@@ -100,7 +118,7 @@ nav a:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-nav .dropdown-content a {		/* Works with nav in front, does not if nav is not present. Why? */
+.navbar .dropdown-content li a {
 	background-color: #e8e8e8;
     color: #283744;
     padding: 12px;
@@ -108,7 +126,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
     text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content ul li a:hover {
     background-color: #E74C3C;
 }
 
@@ -116,7 +134,7 @@ nav .dropdown-content a {		/* Works with nav in front, does not if nav is not pr
     display: block;
 }
 
-.active {
+.navbar .active {
     color: #E67E22;
 }
 
