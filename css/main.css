@@ -85,6 +85,7 @@ a:hover {
 
 .navbar .navmenu {
 	display: none;
+	padding-right: 15px;
 }
 
 .navbar ul {
@@ -110,6 +111,10 @@ a:hover {
     color:#E74C3C;
 }
 
+.navbar .active {
+    color: #E67E22;
+}
+
 .dropdown-content {
 	background-color: #e8e8e8;
     display: none;
@@ -119,23 +124,29 @@ a:hover {
 }
 
 .dropdown-content li a {
+	display: block;
 	background-color: #e8e8e8;
     color: #283744;
-	padding: 2px;
-    display: block;
     text-align: left;
-}
-
-.dropdown-content li:hover {
-    background-color: #E74C3C;
+	padding: 10px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.navbar .active {
-    color: #E67E22;
+.dropdown:hover ul li {
+    display: block;
+	padding: 0;
+}
+
+.dropdown-content li:hover {
+    background-color: #E74C3C;
+}
+
+.dropdown-content li a:hover {
+    background-color: #E74C3C;
+	color: #e8e8e8;
 }
 
 
@@ -148,7 +159,7 @@ a:hover {
     font-size: 3em;
     text-align:center;
 	letter-spacing: .5px;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 .special {

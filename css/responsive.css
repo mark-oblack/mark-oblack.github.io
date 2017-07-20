@@ -94,6 +94,10 @@
 		padding: 0 10px;
     }
 	
+	.dropdown-content li a {
+		padding: 10px;
+	}
+	
 	table {
 		width: 80%;
 	}
@@ -140,6 +144,10 @@
 		padding: 0 13px;
     }
 	
+	.dropdown-content li a {
+		padding: 10px;
+	}
+	
 	table {
 		width: 70%;
 	}
@@ -167,6 +175,10 @@
     .navbar li a {
 		padding: 0 25px;
     }
+	
+	.dropdown-content li a {
+		padding: 10px;
+	}
 	
 	table {
 		width: 60%;
