@@ -117,10 +117,12 @@ a:hover {
 
 .dropdown-content {
 	background-color: #e8e8e8;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: none;
     position: absolute;
     width: 11.4em;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	max-height: 320px;
+	overflow: auto;
 }
 
 .dropdown-content li a {
@@ -131,8 +133,12 @@ a:hover {
 	padding: 10px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/*.dropdown:hover .dropdown-content {
+	display: block;
+}*/
+
+.fa-sort-desc {
+	padding: 0 10px;
 }
 
 .dropdown:hover ul li {

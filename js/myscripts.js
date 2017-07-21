@@ -1,18 +1,5 @@
 // JavaScript Document
 
-//Fixed Navbar
-
-/*var stickyNavTop = $('.navbar').offset().top;
-
-$(window).scroll(function() {  
-    if ($(window).scrollTop() > stickyNavTop) {
-        $('.navbar').addClass('fixed');
-    }
-    else {
-        $('.navbar').removeClass('fixed');
-    }  
-});*/
-
 //Responsive Navbar
 
 function navResponsive() {
@@ -23,3 +10,13 @@ function navResponsive() {
         x.className = "navbar";
     }
 }
+
+//Clickable Dropdown
+
+$(document).ready(function () {
+	$(".dropdown").click(function () {
+		$('li > ul').not($(this).children("ul")).hide();
+		$(this).children("ul").slideToggle('slow');
+	});
+});
+

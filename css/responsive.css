@@ -29,6 +29,10 @@
 		text-align: left;
 		/*border-bottom: solid 1px white;*/
 	}
+	
+	.dropdown .dropdown-content.show {
+		display: block;
+	}
 }
 
 @media all and (min-width: 37.5em){
@@ -43,6 +47,14 @@
     .navbar li a {
         font-size: 1.15em;
     }
+	
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	
+	.dropdown .fa-sort-desc {
+		display: none;
+	}
 	
 	form {
 		width: 70%;
