@@ -77,7 +77,8 @@ a:hover {
 
 .navbar .navmenu {
 	display: none;
-	padding-right: 15px;
+	font-size: 20px;
+	text-align: center;
 }
 
 .navbar ul {
