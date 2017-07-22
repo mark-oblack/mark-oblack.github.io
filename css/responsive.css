@@ -49,12 +49,12 @@
 		display: none;
 		position: absolute;
 		width: 11.4em;
-		max-height: 320px;
 		overflow: auto;
 	}
 
 	.dropdown-content li a {
 		display: block;
+		border-bottom: none;
 		background-color: #e8e8e8;
 		color: #283744;
 		text-align: left;

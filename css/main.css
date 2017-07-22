@@ -110,12 +110,12 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 11.4em;
-	max-height: 320px;
 	overflow: auto;
 }
 
 .dropdown-content li a {
+	background-color: #1f2c35;
+	border-bottom: 2px solid #283744;
 	display: block;
     text-align: left;
 	padding: 10px;
