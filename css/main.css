@@ -69,18 +69,10 @@ a:hover {
 
 
 /*------------------ Nav Bar ------------------*/
-/* For scrolling navbar */
-/*.navbar.fixed {
-	left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}*/
 
 .navbar {
 	background-color: #283744;
 	border-bottom: solid 3px #E67E22;
-	overflow: hidden;
 }
 
 .navbar .navmenu {
@@ -116,8 +108,6 @@ a:hover {
 }
 
 .dropdown-content {
-	background-color: #e8e8e8;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: none;
     position: absolute;
     width: 11.4em;
@@ -127,17 +117,17 @@ a:hover {
 
 .dropdown-content li a {
 	display: block;
-	background-color: #e8e8e8;
-    color: #283744;
     text-align: left;
 	padding: 10px;
 }
 
-/*.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
 	display: block;
-}*/
+	position: relative;
+}
 
 .fa-sort-desc {
+	display: inline-block;
 	padding: 0 10px;
 }
 
@@ -146,13 +136,8 @@ a:hover {
 	padding: 0;
 }
 
-.dropdown-content li:hover {
-    background-color: #E74C3C;
-}
-
 .dropdown-content li a:hover {
-    background-color: #E74C3C;
-	color: #e8e8e8;
+    color: #E74C3C;
 }
 
 

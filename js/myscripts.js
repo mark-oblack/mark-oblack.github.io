@@ -10,13 +10,3 @@ function navResponsive() {
         x.className = "navbar";
     }
 }
-
-//Clickable Dropdown
-
-$(document).ready(function () {
-	$(".dropdown").click(function () {
-		$('li > ul').not($(this).children("ul")).hide();
-		$(this).children("ul").slideToggle('slow');
-	});
-});
-
