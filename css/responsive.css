@@ -47,11 +47,6 @@
 	.navbar ul li a {
 		display: block;
 	}
-
-	
-    .navbar li a {
-        font-size: 1.15em;
-    }
 	
 	.navbar li a:hover {
 		background-color: #283744;

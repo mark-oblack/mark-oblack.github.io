@@ -14,7 +14,7 @@ function navResponsive() {
 function activateDropdown() {
     var x = document.getElementById("dropdownMenu");
     if (x.className === "dropdown-content") {
-        x.className += " responsive";
+        x.className += " show";
     } else {
         x.className = "dropdown-content";
     }
