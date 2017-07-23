@@ -102,15 +102,14 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar li a:hover {
-	color: #e8e8e8;
-    background-color:#E74C3C;
-}
+/*.navbar li a:hover {
+	color: #E74C3C;
+}*/
 
-.navbar .navmenu a:hover {
+/*.navbar .navmenu a:hover {
 	color: #e8e8e8;
     background-color: #283744;
-}
+}*/
 
 .navbar .active {
     color: #E67E22;
@@ -144,10 +143,10 @@ a:hover {
 	padding: 0;
 }
 
-.dropdown-content li a:hover {
+/*.dropdown-content li a:hover {
     background-color: #E74C3C;
 	color: #e8e8e8;
-}
+}*/
 
 
 
