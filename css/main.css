@@ -112,6 +112,11 @@ a:hover {
     background-color:#E74C3C;
 }
 
+.navbar .navmenu a:hover {
+	color: #e8e8e8;
+    background-color: #283744;
+}
+
 .navbar .active {
     color: #E67E22;
 }
