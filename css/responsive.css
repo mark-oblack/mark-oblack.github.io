@@ -39,9 +39,24 @@
 		font-size: 1.3em;
 	}
 	
+	.navbar ul li {
+		display:inline-block;
+		padding: 0 10px;
+	}
+
+	.navbar ul li a {
+		display: block;
+	}
+
+	
     .navbar li a {
         font-size: 1.15em;
     }
+	
+	.navbar li a:hover {
+		background-color: #283744;
+		color:#E74C3C;
+	}
 	
 	.dropdown-content {
 		background-color: #e8e8e8;
