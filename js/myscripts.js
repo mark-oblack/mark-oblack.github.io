@@ -11,11 +11,16 @@ function navResponsive() {
     }
 }
 
+//Submenu
+
 function activateDropdown() {
-    var x = document.getElementById("dropdownMenu");
-    if (x.className === "dropdown-content") {
-        x.className += " show";
-    } else {
-        x.className = "dropdown-content";
-    }
+	var width = document.documentElement.clientWidth;
+	if(width < 600) {
+		var x = document.getElementById("dropdownMenu");
+		if (x.className === "dropdown-content") {
+			x.className += " show";
+		} else {
+			x.className = "dropdown-content";
+		}
+	}
 }
