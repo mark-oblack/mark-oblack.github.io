@@ -170,6 +170,10 @@
 		float: right;
 		width: 55%;
 	}
+	
+	#wrapper {
+		width: 85%;
+	}
 }
 
 @media all and (min-width: 58.75em){
