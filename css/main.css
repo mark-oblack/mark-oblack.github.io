@@ -390,27 +390,27 @@ footer .fa-github {
 /*------------------ Contact Page ------------------*/
 
 .contact-info {
-  list-style: none;
-  padding-bottom: 20px;
-  margin: 0;
+	list-style: none;
+	padding-bottom: 20px;
+	margin: 0;
 }
 
 .contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
 }
 
 
 .contact-info li.mail a{
-  background-image: url('../images/icons/mail.png');
+	background-image: url('../images/icons/mail.png');
 }
 
 .contact-info li.twitter a{
-  background-image: url('../images/icons/twitter.png');
+	background-image: url('../images/icons/twitter.png');
 }
 
 
