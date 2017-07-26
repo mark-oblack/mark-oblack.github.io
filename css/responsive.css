@@ -241,5 +241,14 @@
 	#profile-pic {
 		width: 425px;
 	}
+}
+
+@media all and (min-width: 1650px){
+	#about-content {
+		width: 70%;
+	}
 	
+	#profile-pic {
+		width: 500px;
+	}
 }
