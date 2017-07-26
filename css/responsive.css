@@ -10,9 +10,7 @@
 		display: block;
 		text-align: center;
   	}
-}
 
-@media screen and (max-width: 37.5em) {
 	.navbar.responsive {
 		position: relative;
 	}
@@ -166,6 +164,11 @@
 		justify-content: flex-end;
 		padding-right: 20px;
 	}
+	
+	#profile-pic {
+		display: inline-block;
+		float: right;
+	}
 }
 
 @media all and (min-width: 58.75em){
@@ -237,10 +240,6 @@
     .poke-desktop {
         width: 49%;
     }
-	
-	#profile-pic {
-		width: 425px;
-	}
 }
 
 @media all and (min-width: 1650px){
