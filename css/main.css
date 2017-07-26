@@ -368,10 +368,11 @@ footer .fa-github {
 /*------------------ About Page ------------------*/
 #profile-pic {
 	display: block;
-	border-radius: 50%;
+	border-radius: 100%;
 	margin: 0 auto;
-	padding: 0 20px 20px;
-	width: 60%;
+	padding-bottom: 15px;
+	width: 70%;
+	max-width: 100%;
 }
 
 

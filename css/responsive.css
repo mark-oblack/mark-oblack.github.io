@@ -168,6 +168,7 @@
 	#profile-pic {
 		display: inline-block;
 		float: right;
+		width: 55%;
 	}
 }
 
