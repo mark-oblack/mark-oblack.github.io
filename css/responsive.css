@@ -174,7 +174,6 @@
 	}
 	
 	h2 {
-		font-size: 1.5em;
 		line-height: 1em;
 	}
 	
@@ -214,7 +213,12 @@
         font-size: 1.4em;
     }
 	
+	h2 {
+		font-size: 1.65em;
+	}
+	
     .navbar li a {
+		font-size: 1.3em;
 		padding: 0 25px;
     }
 	
@@ -235,7 +239,7 @@
     }
 	
 	#profile-pic {
-		width: 500px;
+		width: 425px;
 	}
 	
 }

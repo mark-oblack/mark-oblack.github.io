@@ -250,7 +250,7 @@ tr:nth-child(even) {
 
 
 /*------------------ Forms ------------------*/
-form {
+/*form {
     margin:0 auto;
     width: 100%;
     padding: 15px 0;
@@ -299,7 +299,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 input[type=submit]:hover {
     background-color:#E74C3C;
     transition:0.2s;
-}
+}*/
 
 
 
@@ -370,6 +370,7 @@ footer .fa-github {
 	width: 60%;
 	float: right;
 	padding: 0 20px;
+	border-radius: 50%;
 }
 
 
