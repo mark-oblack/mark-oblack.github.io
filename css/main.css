@@ -77,7 +77,6 @@ a:hover {
 
 .navbar .navmenu {
 	display: none;
-	font-size: 20px;
 	text-align: center;
 }
 
@@ -324,16 +323,16 @@ footer p {
 	clear: both;
 	margin: 0 auto;
 	padding: 20px 0;
-	width: 35px;
+	width: 50px;
 }
 
 footer .fa {
 	vertical-align: middle;
 	text-align: center;
-	line-height: 35px;
-	font-size: 22px;
-	height: 35px;
-	width: 35px;
+	line-height: 52px;
+	font-size: 33px;
+	height: 50px;
+	width: 50px;
 	text-decoration: none;
 	border-radius: 50%;
 	margin: 0 8px;
@@ -341,7 +340,7 @@ footer .fa {
 
 footer .fa-github {
 	color: #24292e;
-	font-size: 40px;
+	font-size: 58px;
 }
 
 .fa-twitter {
