@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 37.5em) {	
   	.navbar li:not(:first-child) {
 	  	display: none;
 	}
@@ -30,7 +30,7 @@
 
 @media all and (min-width: 37.5em){
 	h1{
-		font-size: 1.1em;
+		font-size: 1.75em;
 	}
 	
 	h3{
@@ -87,14 +87,16 @@
 	#profile-pic {
 		width: 275px;
 	}
-	/*form {
-		width: 70%;
-	}*/
-    
-    .poke-desktop {
-        width: 100%;
-        padding-bottom: 5px;
-    }
+	
+	
+	#home-gallery img,
+	.overlay {
+		border-radius: 25px;
+	}
+	
+	.caption {
+		font-size: 1.4em;
+	}
 	
 	footer .fa {
 		vertical-align: middle;
@@ -120,10 +122,6 @@
 }
 
 @media all and (min-width: 53.75em){
-	h1{
-		font-size: 1.2em;
-	}
-	
 	h2 {
 		font-size: 1.5em;
 	}
@@ -140,19 +138,7 @@
 	.dropdown-content li a {
 		padding: 10px;
 	}
-	
-	table {
-		width: 80%;
-	}
-	
-	/*form {
-		width: 55%;
-	}*/
-    
-    .poke-desktop {
-        width: 100%;
-    }
-	
+
 	#logos-gallery,
 	#photos-gallery,
 	#promo-gallery {
@@ -178,13 +164,13 @@
 	#wrapper {
 		width: 85%;
 	}
+	
+	.caption {
+		font-size: 1.7em;
+	}
 }
 
 @media all and (min-width: 58.75em){
-	h1{
-		font-size: 1.3em;
-	}
-	
 	h2 {
 		line-height: 1em;
 	}
@@ -201,30 +187,25 @@
 		padding: 10px;
 	}
 	
-	table {
-		width: 70%;
-	}
-	
-	/*form {
-		width: 45%;
-	}*/
-    
-    .poke-desktop {
-        width: 49.7%;
-		padding: 5px 7px;
-
-    }
-	
 	#profile-pic {
 		width: 350px;
 		margin-left: 25px;
 	}
+	
+	#home-gallery li {
+		width: 200px;
+		margin: 0 15px;
+	}
+	
+	.caption {
+		font-size: 1.7em;
+	}
 }
 
-@media all and (min-width: 81.25em){
-	h1{
-        font-size: 1.4em;
-    }
+@media all and (min-width: 81.25em){	
+	h1 {
+		font-size: 2em;
+	}
 	
 	h2 {
 		font-size: 1.65em;
@@ -239,17 +220,14 @@
 		padding: 10px;
 	}
 	
-	table {
-		width: 60%;
+	#home-gallery li {
+		width: 250px;
+		margin: 0 15px;
 	}
 	
-	/*form {
-		width: 40%;
-	}*/
-    
-    .poke-desktop {
-        width: 49%;
-    }
+	.caption {
+		font-size: 2em;
+	}
 }
 
 @media all and (min-width: 1650px){

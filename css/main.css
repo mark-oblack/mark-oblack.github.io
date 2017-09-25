@@ -2,10 +2,8 @@
 /* CSS Document */
 
 /*------------------ Fonts ------------------*/
-@import 'https://fonts.googleapis.com/css?family=Oswald';
-@import 'https://fonts.googleapis.com/css?family=Ubuntu';
 @import 'https://fonts.googleapis.com/css?family=Questrial';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
 
 
@@ -22,24 +20,24 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Raleway', sans-serif;
+	font-weight: 500;
 }
 
 h2, h3 {
-    font-family: 'Oswald', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
     color: #16A085;
     letter-spacing: .5px;
-    padding: 15px 0;
+	padding: 20px 0;
 }
 
 h2 {
     font-size: 1.6em;
-	margin: 5px 0;
 }
 
 h3 {
     font-size: 1.2em;
-	margin-bottom: 10px;
 }
 
 img {
@@ -82,8 +80,6 @@ a:hover {
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -96,19 +92,9 @@ a:hover {
 .navbar li a {
 	background-color: #283744;
 	color: #ECF0F1;
-	display: block;
 	font-size: 1.2em;
     text-decoration: none;
 }
-
-/*.navbar li a:hover {
-	color: #E74C3C;
-}*/
-
-/*.navbar .navmenu a:hover {
-	color: #e8e8e8;
-    background-color: #283744;
-}*/
 
 .navbar .active {
     color: #E67E22;
@@ -142,20 +128,16 @@ a:hover {
 	padding: 0;
 }
 
-/*.dropdown-content li a:hover {
-    background-color: #E74C3C;
-	color: #e8e8e8;
-}*/
-
 
 
 /*------------------ Main Header ------------------*/
 #main-header {
 	background-color:#283744;
 	color: #ECF0F1;
-    font-family: 'Oswald', sans-serif;
-    font-size: 3em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
     text-align:center;
+	font-size: 1.97em;
 	letter-spacing: .5px;
     padding: 20px 10px;
 }
@@ -181,13 +163,6 @@ a:hover {
 #main-content p {
 	line-height: 1.5em;
 	padding-bottom: 1em;
-}
-
-#main-banner {
-	display: block;
-	margin: 0 auto;
-    padding-top: 10px;
-	width: 88%;
 }
 
 
@@ -220,85 +195,11 @@ a:hover {
 	width: 100%;
 }
 
-
-
-/*------------------ Table ------------------*/
-
-table {
-    font-family: 'Open Sans', sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin:0 auto;
+#logos-gallery img:hover,
+#photos-gallery img:hover,
+#promo-gallery img:hover {
+	opacity: 0.7;
 }
-
-th {
-    font-weight: bold;
-}
-
-td, th {
-    border: 3px solid #3498DB;
-    text-align: left;
-    padding: 8px;
-}
-
-
-tr:nth-child(even) {
-    background-color: #3498DB;
-}
-
-
-
-/*------------------ Forms ------------------*/
-/*form {
-    margin:0 auto;
-    width: 100%;
-    padding: 15px 0;
-}
-
-input[type=text], input[type=email] {
-    display:block;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-textarea {
-    display:block;
-    width: 100%;
-    height: 250px;
-    padding: 8px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-    resize: none;
-}
-
-input[type=submit] {
-    background-color: #16A085;
-    border: none;
-    color: #ECF0F1;
-    display: block;
-    padding: 16px 32px;
-    margin: 0 auto;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: 'Questrial', sans-serif;
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-    border: 2px solid #283744;
-}
-
-input[type=submit]:hover {
-    background-color:#E74C3C;
-    transition:0.2s;
-}*/
 
 
 
@@ -309,8 +210,12 @@ footer{
 }
 
 footer p {
+	background-color: #283744;
+	border-top: solid 4px #E67E22;
+	color: #ECF0F1;
     display: block;
     padding: 20px 0;
+	margin-top: 10px;
 	clear: both;
 }
 
@@ -364,6 +269,68 @@ footer .fa-github {
 
 
 
+/*------------------ Home Page ------------------*/
+.container {
+	position: relative;
+}
+
+#home-gallery {
+	display: block;
+	list-style: none;
+	text-align: center;
+}
+
+#home-gallery li {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 5px;
+	width: 32%;
+}
+
+/*#home-gallery a {
+	display: block;
+}*/
+
+#home-gallery img {
+	border-radius: 10px;
+	display: block;
+	height: auto;
+	width: 100%;
+	/*box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);*/
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #E67E22;
+	border-radius: 10px;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.caption {
+	color: #ecf0f1;
+	font-size: .85em;
+	font-weight: 600;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+
+
 /*------------------ About Page ------------------*/
 #profile-pic {
 	display: block;
@@ -372,16 +339,6 @@ footer .fa-github {
 	padding-bottom: 15px;
 	width: 220px;
 	max-width: 100%;
-}
-
-
-/*------------------ Monthly Theme Page ------------------*/
-#wallpapers-gallery ul {
-	list-style-type: none;
-}
-
-#wallpapers-gallery li {
-	display: inline;
 }
 
 
@@ -402,7 +359,6 @@ footer .fa-github {
 	padding: 0 0 0 30px;
 	margin: 0 0 10px;
 }
-
 
 .contact-info li.mail a{
 	background-image: url('../images/icons/mail.png');
