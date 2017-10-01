@@ -29,17 +29,23 @@
 }
 
 @media all and (min-width: 37.5em){
-	h1{
-		font-size: 1.75em;
+	#main-header h1 {
+		float: left;
+		font-size: 1.5em;
 	}
 	
 	h3{
 		font-size: 1.3em;
 	}
 	
+	.navbar {
+		float: right;
+		padding-right: 10px;
+	}
+	
 	.navbar ul li {
 		display:inline-block;
-		padding: 0 10px;
+		padding: 15px 2px 0 2px;
 	}
 
 	.navbar ul li a {
@@ -56,7 +62,7 @@
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		display: none;
 		position: absolute;
-		width: 11.4em;
+		width: 10em;
 		overflow: auto;
 	}
 
@@ -84,10 +90,13 @@
 		display: none;
 	}
 	
+	#main-content {
+		padding-top: 70px;
+	}
+	
 	#profile-pic {
 		width: 275px;
 	}
-	
 	
 	#home-gallery img,
 	.overlay {
@@ -118,6 +127,24 @@
 		padding: 20px 0;
 		width: 50px;
 	}
+	
+	.web-container img {
+		float: left;
+		width: 60%;
+		padding-right: 10px;
+		padding-bottom: 50px;
+	}
+	
+	.web-container p {
+		float: right;
+		width: 40%;
+		padding-left: 10px;
+	}
+	
+	h3 {
+		clear: left;
+	}
+	
 
 }
 

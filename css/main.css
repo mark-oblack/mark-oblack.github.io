@@ -25,19 +25,21 @@ body {
 }
 
 h2, h3 {
+	display: block;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
     color: #16A085;
     letter-spacing: .5px;
-	padding: 20px 0;
 }
 
 h2 {
     font-size: 1.6em;
+	padding: 20px 0;
 }
 
 h3 {
     font-size: 1.2em;
+	padding-bottom: 20px;
 }
 
 img {
@@ -70,7 +72,6 @@ a:hover {
 
 .navbar {
 	background-color: #283744;
-	border-bottom: solid 3px #E67E22;
 }
 
 .navbar .navmenu {
@@ -133,11 +134,21 @@ a:hover {
 /*------------------ Main Header ------------------*/
 #main-header {
 	background-color:#283744;
+	position: fixed;
+	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	border-bottom: solid 3px #E67E22;
+}
+
+#main-header h1 {
+	background-color:#283744;
 	color: #ECF0F1;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
     text-align:center;
-	font-size: 1.97em;
+	font-size: 1.9em;
 	letter-spacing: .5px;
     padding: 20px 10px;
 }
@@ -158,6 +169,8 @@ a:hover {
 #main-content {
     margin: 0 auto;
     width: 88%;
+	padding-top: 7em;
+	padding-bottom: 2.5em;
 }
 
 #main-content p {
@@ -223,14 +236,6 @@ footer p {
 
 /*------------------ Icons ------------------*/
 
-.return-top {
-	display: block;
-	clear: both;
-	margin: 0 auto;
-	padding: 20px 0;
-	width: 50px;
-}
-
 footer .fa {
 	vertical-align: middle;
 	text-align: center;
@@ -287,10 +292,6 @@ footer .fa-github {
 	width: 32%;
 }
 
-/*#home-gallery a {
-	display: block;
-}*/
-
 #home-gallery img {
 	border-radius: 10px;
 	display: block;
@@ -340,6 +341,37 @@ footer .fa-github {
 	width: 220px;
 	max-width: 100%;
 }
+
+.resume {
+	text-align: center;
+}
+
+.resume-button {
+	background-color: #16A085;
+    border: none;
+    color: #ECF0F1;
+    padding: 16px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.resume-button:hover{
+    background-color:#E74C3C;
+    transition:0.2s;
+}
+
+
+
+/*------------------ Web Design Page ------------------*/
+.web-container {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
 
 
 

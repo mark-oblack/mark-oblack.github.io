@@ -13,48 +13,48 @@
 
     <body>
         <header id="main-header">
-            <h1>Mark O'Black <span class="special">&#124;</span> Design</h1>
-        </header>
-        <nav class="navbar" id="topNav">
+            <a href="index.html">
+            	<h1 class="name">Mark O'Black <span class="special">&#124;</span> Design</h1>
+			</a>
+            <nav class="navbar" id="topNav">
             <ul>
                	<li class="navmenu" >
                		<a href="javascript:void(0);" onclick="navResponsive()">&#9776; Menu</a>
                	</li>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-					<a class="active" href="#artwork" aria-haspopup="true" onclick="activateDropdown()">My Projects
+					<a href="#artwork" class="active" aria-haspopup="true" onclick="activateDropdown()">My Projects
 						<i class="fa fa-sort-desc" aria-hidden="true"></i>
 					</a>
                     <ul class="dropdown-content" id="dropdownMenu">
 						<li><a href="logos.html">Illustrations</a></li>
-						<li><a href="promo.html">Web Design</a></li>
+						<li><a href="webDesign.html">Web Design</a></li>
 						<li><a href="photography.html">Photography</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        	</nav>
+        </header>
         <div id="wrapper">
             <div id="main-content">
                 <h2>Web Design</h2>
                 <h3>Spider-Man Tribute Page</h3>
-                <div>
+                <div class="web-container">
                 	<a href="http://markoblack.com/tribute-page/" target="_blank">
                 		<img src="images/webDesign/spider-man-tribute.jpeg">
                 	</a>
+                	<p>A tribute page dedicated to Spider-Man for the freeCodeCamp curriculum. This page use modal boxes to show/hide information about each Spider-Man.</p>
                 </div>
                 <h3>jQuery Cynlinder Volume Calculator</h3>
-                <div>
+                <div class="web-container">
                 	<a href="http://markoblack.com/jquery-calculator/" target="_blank">
                 		<img src="images/webDesign/jquery-calculator.jpeg">
                 	</a>
+                	<p>A simple volume calculator that uses jQuery. The calculator can validate user inputs and compute the volume of the cylinder based on the radius and height defined by the user.</p>
                 </div>
             </div> <!--main-content-->
 		</div>
-		<a class="return-top" href="#main-header">
-			<img src="images/return-top-icon.png">
-		</a>
 		<footer>
         	<div class="flex-container">
         		<a href="https://github.com/mark-oblack">
