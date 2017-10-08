@@ -130,14 +130,14 @@
 	
 	.web-container img {
 		float: left;
-		width: 60%;
+		width: 55%;
 		padding-right: 10px;
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 	}
 	
 	.web-container p {
 		float: right;
-		width: 40%;
+		width: 45%;
 		padding-left: 10px;
 	}
 	

@@ -2,8 +2,7 @@
 /* CSS Document */
 
 /*------------------ Fonts ------------------*/
-@import 'https://fonts.googleapis.com/css?family=Questrial';
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500');
 
 
 
@@ -15,29 +14,29 @@
 
 body {
     background-color: #ECF0F1;
-	/*background-image: linear-gradient(#ECF0F1, #d8eaef);*/
     color: #283744;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-    font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+	font-weight: 300;
 }
 
 h2, h3 {
 	display: block;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
     color: #16A085;
+	font-family: 'Heebo', sans-serif;
     letter-spacing: .5px;
 }
 
 h2 {
+	font-weight: 400;
     font-size: 1.6em;
 	padding: 20px 0;
 }
 
 h3 {
+	font-weight: 300;
     font-size: 1.2em;
 	padding-bottom: 20px;
 }
@@ -85,6 +84,8 @@ a:hover {
 }
 
 .navbar ul li a {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 300;
     display:inline-block;
 	padding: 10px;
 	width: 100%;
@@ -145,7 +146,7 @@ a:hover {
 #main-header h1 {
 	background-color:#283744;
 	color: #ECF0F1;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-weight: 500;
     text-align:center;
 	font-size: 1.9em;
@@ -327,7 +328,6 @@ footer .fa-github {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
 }
 
 
@@ -349,11 +349,13 @@ footer .fa-github {
 .resume-button {
 	background-color: #16A085;
     border: none;
+	border-radius: 5px;
     color: #ECF0F1;
     padding: 16px 32px;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Heebo', sans-serif;
+	font-weight: 400;
     font-size: 1em;
     letter-spacing: 1px;
 }
@@ -372,7 +374,9 @@ footer .fa-github {
 	display: block;
 }
 
-
+.web-container img {
+	padding-bottom: 5px;
+}
 
 
 /*------------------ Contact Page ------------------*/
