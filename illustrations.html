@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/myscripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -42,61 +43,46 @@
                 <div id="container">
 					<ul id="logos-gallery">
 						<li>
-							<a href="images/logos/flat-design-goldfish.jpg">
-								<img src="images/logos/flat-design-goldfish.jpg" alt="Flat Art Goldfish">
-							</a>
+							<img class="myImg" src="images/logos/flat-design-goldfish.jpg" alt="Flat Art Goldfish">
 						</li>
 						<li>
-							<a href="images/logos/steel-city-logo-2.png">
-								<img src="images/logos/steel-city-logo-2.png" alt="HDI Steel City Logo">
-							</a>	
+							<img class="myImg" src="images/logos/steel-city-logo-2.png" alt="HDI Steel City Logo">
 						</li>
 						<li>
-							<a href="images/logos/flat-spaceship-design-final.jpg">
-								<img src="images/logos/flat-spaceship-design-final.jpg" alt="Flat Art Spaceship">
-							</a>
+							<img class="myImg" src="images/logos/flat-spaceship-design-final.jpg" alt="Flat Art Spaceship">
 						</li>
 						<li>
-							<a href="images/logos/flat-design-easter.jpg">
-								<img src="images/logos/flat-design-easter.jpg" alt="Flat Art Rabbit">
-							</a>
+							<img class="myImg" src="images/logos/flat-design-easter.jpg" alt="Flat Art Rabbit">
 						</li>
 						<li>
-							<a href="images/logos/flat-design-lighthouse.jpg">
-								<img src="images/logos/flat-design-lighthouse.jpg" alt="Flat Art Lighthouse">
-							</a>
+							<img class="myImg" src="images/logos/flat-design-lighthouse.jpg" alt="Flat Art Lighthouse">
 						</li>
 						<li>
-							<a href="images/logos/phishing_infographic.jpg">
-								<img src="images/logos/phishing_infographic.jpg" alt="Flat Art Phishing Infographic">
-							</a>
+							<img class="myImg" src="images/logos/phishing_infographic.jpg" alt="Flat Art Phishing Infographic">
 						</li>
 						<li>
-							<a href="images/newsletter/newsletter-aug-2017.pdf">
-								<img src="images/newsletter/newsletter-aug-2017.jpg" alt="Tech Talk Fall Newsletter">
-							</a>
+							<img class="myImg" src="images/newsletter/newsletter-aug-2017.jpg" alt="Tech Talk Fall Newsletter">
 						</li>
 						<li>
-							<a href="images/promo/TLWTT-2017.jpg">
-								<img src="images/promo/TLWTT-2017.jpg" alt="Tech Life World Tech Tour Flyer">
-							</a>
+							<img class="myImg" src="images/promo/TLWTT-2017.jpg" alt="Tech Life World Tech Tour Flyer">
 						</li>
 						<li>
-							<a href="images/promo/UW-HotDogSalePoster-draft3.jpg">
-								<img src="images/promo/UW-HotDogSalePoster-draft3.jpg" alt="Gorumet Hot Dog Sale Flyer">
-							</a>
+							<img class="myImg" src="images/promo/UW-HotDogSalePoster-draft3.jpg" alt="Gorumet Hot Dog Sale Flyer">
 						</li>
 						<li>
-							<a href="images/promo/cse-flyer-eyes.jpg">
-								<img src="images/promo/cse-flyer-eyes.jpg" alt="Fall 2017 Cyber Security Event Flyer">
-							</a>
+							<img class="myImg" src="images/promo/cse-flyer-eyes.jpg" alt="Fall 2017 Cyber Security Event Flyer">
 						</li>
 						<li>
-							<a href="images/promo/UW-ballroom-dancing-flyer-final.jpg">
-								<img src="images/promo/UW-ballroom-dancing-flyer-final.jpg" alt="Ballroom Dancing On The Bluff Flyer">
-							</a>
+							<img class="myImg" src="images/promo/UW-ballroom-dancing-flyer-final.jpg" alt="Ballroom Dancing On The Bluff Flyer">
 						</li>
 					</ul>
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+							<img class="modal-content" id="img01">
+          					<div id="caption"></div>
+						</div>
+					</div>
 				</div>
             </div> <!--main-content-->
 		</div>
@@ -117,5 +103,28 @@
 			</div>
 			<p>&copy; 2017 Mark E. O&#39;Black</p>
         </footer>
+        <script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = $('.myImg');
+			var modalImg = $("#img01");
+			var captionText = document.getElementById("caption");
+			$('.myImg').click(function(){
+				modal.style.display = "block";
+				var newSrc = this.src;
+				modalImg.attr('src', newSrc);
+				captionText.innerHTML = this.alt;
+			});
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
     </body>
 </html>

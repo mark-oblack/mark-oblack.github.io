@@ -195,6 +195,10 @@
 	.caption {
 		font-size: 1.7em;
 	}
+	
+	.modal-content, #caption {
+		width: 80%;
+	}
 }
 
 @media all and (min-width: 58.75em){

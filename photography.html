@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/myscripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -42,31 +43,28 @@
                 <div id="container">
 					<ul id="photos-gallery">
 						<li>
-							<a href="images/photos/fall-focus-blur.jpg">
-								<img src="images/photos/fall-focus-blur.jpg" alt="Bridge in fall with focus and blur">
-							</a>
+							<img class="myImg" src="images/photos/fall-focus-blur.jpg" alt="Bridge in fall with focus and blur">
 						</li>
 						<li>
-							<a href="images/photos/Light-Blur.jpg">
-								<img src="images/photos/Light-Blur.jpg" alt="Lightbulb with focus and blur">
-							</a>
+							<img class="myImg" src="images/photos/Light-Blur.jpg" alt="Lightbulb with focus and blur">
 						</li>
 						<li>
-							<a href="images/photos/ThePoint_wc.jpg">
-								<img src="images/photos/ThePoint_wc.jpg" alt="The Point Water Color Effect">
-							</a>
+							<img class="myImg" src="images/photos/ThePoint_wc.jpg" alt="The Point Water Color Effect">
 						</li>
 						<li>
-							<a href="images/photos/ice_cream_water_color.jpg">
-								<img src="images/photos/ice_cream_water_color.jpg" alt="Ice Cream Sundae Water Color Effect">
-							</a>
+							<img class="myImg" src="images/photos/ice_cream_water_color.jpg" alt="Ice Cream Sundae Water Color Effect">
 						</li>
 						<li>
-							<a href="images/photos/JoyOrnament2016.jpg">
-								<img src="images/photos/JoyOrnament2016.jpg" alt="Christmas Ornament with Focus/Blur">
-							</a>
+							<img class="myImg" src="images/photos/JoyOrnament2016.jpg" alt="Christmas Ornament with Focus/Blur">
 						</li>
 					</ul>
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+							<img class="modal-content" id="img01">
+          					<div id="caption"></div>
+						</div>
+					</div>
 				</div>
             </div> <!--main-content-->
 		</div>
@@ -86,6 +84,29 @@
 				</a>
 			</div>
 			<p>&copy; 2017 Mark E. O&#39;Black</p>
-        </footer>
+        </footer>    
+        <script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = $('.myImg');
+			var modalImg = $("#img01");
+			var captionText = document.getElementById("caption");
+			$('.myImg').click(function(){
+				modal.style.display = "block";
+				var newSrc = this.src;
+				modalImg.attr('src', newSrc);
+				captionText.innerHTML = this.alt;
+			});
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
     </body>
 </html>
