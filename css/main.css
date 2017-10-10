@@ -263,12 +263,13 @@ a:hover {
     transition: 0.3s;
 }
 
-/*.close:hover,
+.close:hover,
 .close:focus {
-    color: #bbb;
+    color: #bdc3c7;
+    color: #bdc3c7;
     text-decoration: none;
     cursor: pointer;
-}*/
+}
 
 
 
