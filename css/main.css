@@ -28,7 +28,7 @@ h2, h3 {
     color: #283744;
 	font-family: 'Roboto Slab', serif;
     letter-spacing: .5px;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+	text-shadow: .5px .5px 0px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
