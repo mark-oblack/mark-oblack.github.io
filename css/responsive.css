@@ -259,14 +259,16 @@
 	.caption {
 		font-size: 2em;
 	}
+	
+	#about-content {
+		width: 50%;
+	}
 }
 
 @media all and (min-width: 1650px){
-	#about-content {
-		width: 70%;
-	}
 	
 	#profile-pic {
-		width: 500px;
+		width: 400px;
 	}
+
 }
