@@ -145,6 +145,16 @@
 		clear: left;
 	}
 	
+	.resume-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.resume {
+		margin: 0 10px;
+	}
+	
 
 }
 
