@@ -273,6 +273,9 @@
 	#about-content {
 		width: 50%;
 	}
+	
+	.resume-container {
+		width: 50%;
 }
 
 @media all and (min-width: 1650px){
@@ -282,3 +285,5 @@
 	}
 
 }
+	
+	
