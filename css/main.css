@@ -441,6 +441,11 @@ footer .fa-github {
 	padding-bottom: 5px;
 }
 
+.web-container img:hover {
+	opacity: 0.5;
+	transition: 0.25s ease;
+}
+
 
 /*------------------ Contact Page ------------------*/
 
