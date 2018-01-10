@@ -13,11 +13,15 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
     background-color: #ECF0F1;
     color: #283744;
 	display: flex;
-	min-height: 100vh;
+/*	min-height: 100vh;*/
 	flex-direction: column;
     font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -47,9 +51,11 @@ img {
   max-width: 100%;
 }
 
-#wrapper {
-	flex: 1;
-}
+/*#wrapper {
+	flex-grow: 1;
+}*/
+
+
 
 /*------------------ Links ------------------*/
 
