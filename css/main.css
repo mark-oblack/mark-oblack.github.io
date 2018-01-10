@@ -280,16 +280,18 @@ a:hover {
 
 footer{
 	text-align: center;
+	position:fixed;
+   	left:0px;
+   	bottom:0px;
+   	width: 100%;
 }
 
 footer p {
 	background-color: #283744;
 	border-top: solid 4px #E67E22;
 	color: #ECF0F1;
-    display: block;
     padding: 20px 0;
 	margin-top: 10px;
-	clear: both;
 }
 
 
