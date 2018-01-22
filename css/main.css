@@ -13,6 +13,14 @@
 	box-sizing: border-box;
 }
 
+/*html,
+body,
+#wrapper,
+#main-content {
+	height: 100%;
+	min-height: 100%;
+}*/
+
 html, body {
 	height: 100%;
 }
@@ -21,10 +29,8 @@ body {
     background-color: #ECF0F1;
     color: #283744;
 	display: flex;
-/*	min-height: 100vh;*/
 	flex-direction: column;
     font-family: 'Roboto', sans-serif;
-	font-weight: 400;
 }
 
 h2, h3 {
@@ -50,10 +56,6 @@ h3 {
 img {
   max-width: 100%;
 }
-
-/*#wrapper {
-	flex-grow: 1;
-}*/
 
 
 
@@ -173,6 +175,7 @@ a:hover {
     width: 100%;
 	margin: 0 auto;
     line-height: 1.5em;
+    flex-grow: 1;
 }
 
 #main-content {
