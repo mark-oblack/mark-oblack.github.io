@@ -224,12 +224,14 @@ a:hover {
 
 /*------------------ Modal Styles ------------------*/
 .myImg {
-    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/*.myImg:hover {opacity: 0.7;}*/
+.myImg:hover {
+	opacity: 0.75;
+	transition: 0.25s ease;
+}
 
 .modal {
     display: none;
@@ -276,8 +278,7 @@ a:hover {
 
 .close:hover,
 .close:focus {
-    color: #bdc3c7;
-    color: #bdc3c7;
+    color: #636e72;
     text-decoration: none;
     cursor: pointer;
 }
@@ -450,7 +451,7 @@ footer .fa-github {
 }
 
 .web-container img:hover {
-	opacity: 0.5;
+	opacity: 0.75;
 	transition: 0.25s ease;
 }
 
