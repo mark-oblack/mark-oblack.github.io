@@ -174,7 +174,6 @@ a:hover {
 	justify-content: flex-start;
     line-height: 1.5em;
     margin: 0 auto;
-    /*height: 100%;*/
     min-height: 100%;
     width: 100%;
 }
@@ -182,8 +181,8 @@ a:hover {
 #main-content,
 #home-main-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
-
 	margin: 0 auto;
     width: 88%;
 }
@@ -302,6 +301,7 @@ a:hover {
 /*------------------ Footer ------------------*/
 
 footer{
+	align-self: flex-end;
 	bottom: 0;
 	text-align: center;
 	width: 100%;
