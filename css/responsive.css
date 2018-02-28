@@ -87,14 +87,6 @@
 		font-size: 56px;
 	}
 	
-	.return-top {
-		display: block;
-		clear: both;
-		margin: 0 auto;
-		padding: 20px 0;
-		width: 50px;
-	}
-	
 	.web-container img {
 		float: left;
 		width: 55%;
@@ -162,7 +154,7 @@
 	}
 	
 	#main-content {
-		width: 85%;
+		width: 80%;
 	}
 	
 	.caption {
@@ -186,9 +178,9 @@
     .navbar li a {
 		padding: 0 13px;
     }
-	
-	.dropdown-content li a {
-		padding: 10px;
+
+	#about-content {
+		width: 55%;
 	}
 	
 	#profile-pic {
@@ -219,9 +211,9 @@
 		font-size: 1.3em;
 		padding: 0 25px;
     }
-	
-	.dropdown-content li a {
-		padding: 10px;
+
+	#main-content {
+		width: 75%;
 	}
 	
 	#home-gallery li {
