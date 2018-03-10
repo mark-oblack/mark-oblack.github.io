@@ -73,32 +73,6 @@
 	.caption {
 		font-size: 1.4em;
 	}
-	
-	footer .fa {
-		vertical-align: middle;
-		text-align: center;
-		line-height: 50px;
-		font-size: 33px;
-		height: 50px;
-		width: 50px;
-	}
-	
-	footer .fa-github {
-		font-size: 56px;
-	}
-	
-	/*.web-container img {
-		float: left;
-		width: 55%;
-		padding-right: 10px;
-		padding-bottom: 30px;
-	}
-	
-	.web-container p {
-		float: right;
-		width: 45%;
-		padding-left: 10px;
-	}*/
 
 	.web-card {
 		margin-bottom: 25px;
@@ -149,13 +123,6 @@
 		-moz-column-count: 3;
 		-webkit-column-count: 3;
 		column-count: 3;
-	}
-	
-	.flex-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		padding-right: 20px;
 	}
 	
 	#profile-pic {
