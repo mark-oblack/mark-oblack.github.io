@@ -109,7 +109,7 @@ Nav Bar
 }
 
 .navbar .active {
-    color: #E67E22;
+    color: #ee7546;
 }
 
 .dropdown-content {
@@ -147,7 +147,7 @@ Main Header
 ------------------*/
 #main-header {
 	background-color:#283744;
-	border-bottom: solid 3px #E67E22;
+	border-bottom: solid 3px #ee7546;
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
 	position: fixed;
 	top: 0;
@@ -314,7 +314,7 @@ footer{
 
 #main-footer p {
   	/*background-color: #283744;*/
-  	/*border-top: solid 4px #E67E22;*/
+  	/*border-top: solid 4px #ee7546;*/
   	color: #283744;
 	display: block;
   	margin: 10px 0;
