@@ -338,19 +338,19 @@ Icons
 	align-items: center;
 }
 
-.fa-github,
-.fa-codepen,
-.fa-twitter,
-.fa-envelope {
+.icon-flex .fa-github,
+.icon-flex .fa-codepen,
+.icon-flex .fa-twitter,
+.icon-flex .fa-envelope {
   	color: #283744;
   	font-size: 2.25em;
   	margin: 0 15px;
 }
 
-.fa-github:hover,
-.fa-codepen:hover,
-.fa-twitter:hover,
-.fa-envelope:hover {
+.icon-flex .fa-github:hover,
+.icon-flex .fa-codepen:hover,
+.icon-flex .fa-twitter:hover,
+.icon-flex .fa-envelope:hover {
 	color: #445d72;
 	transition: 0.2s ease;
 }
@@ -376,11 +376,9 @@ Home Page
 
 .container {
 	position: relative;
-	/*box-shadow: 0px 5px 1px rgba(52,73,94,0.2);*/
 }
 
 #home-gallery {
-	/*display: block;*/
 	align-self: center;
 	list-style: none;
 	padding: none;
@@ -529,21 +527,19 @@ Contact Page
 	margin: 0;
 }
 
+.contact-info li {
+	margin-bottom: 15px;;
+}
+
 .contact-info a {
-	display: block;
-	min-height: 20px;
-	background-repeat: no-repeat;
-	background-size: 20px 20px;
-	padding: 0 0 0 30px;
-	margin: 0 0 10px;
+	text-align: left;
 }
 
-.contact-info li.mail a{
-	background-image: url('../assets/icons/mail.png');
-}
-
-.contact-info li.twitter a{
-	background-image: url('../assets/icons/twitter.png');
+.contact-info .fa-twitter,
+.contact-info .fa-envelope {
+  	color: #283744;
+  	font-size: 1.5em;
+  	margin: 0 10px;
 }
 
 
