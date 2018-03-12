@@ -548,11 +548,11 @@ Contact Page
 }
 
 .contact-info li.mail a{
-	background-image: url('../images/icons/mail.png');
+	background-image: url('../assets/icons/mail.png');
 }
 
 .contact-info li.twitter a{
-	background-image: url('../images/icons/twitter.png');
+	background-image: url('../assets/icons/twitter.png');
 }
 
 
