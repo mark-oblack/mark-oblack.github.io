@@ -221,9 +221,7 @@ Masonry Grid
 	margin: 0 auto;
 }
 
-#logos-gallery,
-#photos-gallery,
-#promo-gallery {
+#illustrations-gallery {
 	list-style: none;
 	-moz-column-count: 2;
 	-moz-column-gap: 10px;
@@ -234,9 +232,7 @@ Masonry Grid
 	width: 100%;
 }
 
-#logos-gallery img,
-#photos-gallery img,
-#promo-gallery img {
+#illustrations-gallery img {
 	display: inline-block;
 	margin-bottom: 4px;
 	width: 100%;
@@ -247,14 +243,10 @@ Masonry Grid
 /*------------------
 Modal Styles
 ------------------*/
-.myImg {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 .myImg:hover {
+	cursor: pointer;
 	opacity: 0.75;
-	transition: 0.25s ease;
+	transition: 0.2s ease;
 }
 
 .modal {
@@ -325,7 +317,6 @@ footer{
   	/*border-top: solid 4px #E67E22;*/
   	color: #283744;
 	display: block;
-    /*padding: 10px 0;*/
   	margin: 10px 0;
 	clear: both;
 }
@@ -481,7 +472,7 @@ About Page
 }
 
 .resume-button:hover{
-    background-color:#E74C3C;
+    background-color:#445d72;
     transition:0.2s;
 }
 
