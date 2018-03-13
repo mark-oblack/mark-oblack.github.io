@@ -528,7 +528,7 @@ Contact Page
 }
 
 .contact-info li {
-	margin-bottom: 15px;;
+	margin-bottom: 15px;
 }
 
 .contact-info a {
@@ -536,10 +536,20 @@ Contact Page
 }
 
 .contact-info .fa-twitter,
-.contact-info .fa-envelope {
+.contact-info .fa-envelope,
+.contact-info .fa-linkedin-in {
   	color: #283744;
   	font-size: 1.5em;
-  	margin: 0 10px;
+  	/*margin-right: 15px;*/
+}
+
+.contact-info .fa-twitter,
+.contact-info .fa-envelope {
+	margin-right: 15px;
+}
+
+.contact-info .fa-linkedin-in {
+	margin-right: 20px;
 }
 
 
