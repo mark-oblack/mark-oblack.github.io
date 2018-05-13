@@ -64,10 +64,14 @@
 	#profile-pic {
 		width: 275px;
 	}
-	
-	#home-gallery img,
-	.overlay {
-		border-radius: 25px;
+
+	#home-gallery {
+		flex-direction: row;
+	}
+
+	#home-gallery li {
+		width: 175px;
+		margin: 0 15px;
 	}
 	
 	.caption {
@@ -164,10 +168,10 @@
 		width: 350px;
 		margin-left: 25px;
 	}
-	
+
 	#home-gallery li {
 		width: 200px;
-		margin: 0 15px;
+		/*margin: 0 15px;*/
 	}
 	
 	.caption {
@@ -194,8 +198,8 @@
 	}
 	
 	#home-gallery li {
-		width: 250px;
-		margin: 0 15px;
+		width: 225px;
+		margin: 0 25px;
 	}
 	
 	.caption {
