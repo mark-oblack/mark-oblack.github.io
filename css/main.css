@@ -339,6 +339,7 @@ Icons
 
 .icon-flex .fa-github,
 .icon-flex .fa-codepen,
+.icon-flex .fa-dribbble,
 .icon-flex .fa-twitter,
 .icon-flex .fa-envelope {
   	color: #283744;
@@ -348,6 +349,7 @@ Icons
 
 .icon-flex .fa-github:hover,
 .icon-flex .fa-codepen:hover,
+.icon-flex .fa-dribbble:hover,
 .icon-flex .fa-twitter:hover,
 .icon-flex .fa-envelope:hover {
 	color: #445d72;
