@@ -30,12 +30,12 @@
             </ul>
         </nav>
         </header>
-            <div id="main-content">
+            <section id="main-content">
                 <h2>Illustrations</h2>
-                <div id="container">
+                <section id="container">
 					<ul id="illustrations-gallery">
 						<li>
-							<a href="assets/files/csd-spring-2018.pdf">
+							<a href="assets/files/csd-spring-2018.pdf" target="_blank">
 								<img class="myImg" src="assets/illustrations/csd-cover.jpg" alt="Cyber Security Digest Spring 2018">
 							</a>
 						</li>
@@ -74,8 +74,8 @@
           					<div id="caption"></div>
 						</div>
 					</div>
-				</div>
-            </div> <!--main-content-->
+				</section> <!-- container -->
+            </section> <!--main-content-->
 			<footer>
 	        	<div class="icon-flex">
 	                <a href="https://github.com/mark-oblack" target="_blank">
@@ -96,29 +96,8 @@
 	            </div>
 				<p>&copy; 2018 Mark E. O&#39;Black</p>
 	        </footer>
-        </div>
-        <script>
-			// Get the modal
-			var modal = document.getElementById('myModal');
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = $('.myImg');
-			var modalImg = $("#img01");
-			var captionText = document.getElementById("caption");
-			$('.myImg').click(function(){
-				modal.style.display = "block";
-				var newSrc = this.src;
-				modalImg.attr('src', newSrc);
-				captionText.innerHTML = this.alt;
-			});
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			  modal.style.display = "none";
-			}
-		</script>
+        </div> <!--wrapper -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/myscripts.js"></script>
     </body>
 </html>
