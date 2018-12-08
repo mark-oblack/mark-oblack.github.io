@@ -458,7 +458,8 @@ About Page
 	max-width: 100%;
 }
 
-.resume {
+.resume,
+.files {
 	display: block;
 	text-align: center;
 	padding-top: 25px;
@@ -479,9 +480,25 @@ About Page
 	width: 100px;
 }
 
-.resume-button:hover{
+.resume-button:hover,
+.files-button:hover {
     background-color:#445d72;
     transition:0.2s;
+}
+
+.files-button {
+	background-color: #283744;
+    border: none;
+	border-radius: 5px;
+    color: #ECF0F1;
+    padding: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+	width: 150px;
 }
 
 
