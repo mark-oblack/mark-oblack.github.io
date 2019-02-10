@@ -1,16 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media screen and (max-width: 43.75em) {	
-  	.navbar li:not(:first-child) {
-	  	display: none;
+@media screen and (max-width: 700px) {	
+  .navbar li:not(:first-child) {
+	  display: none;
 	}
 	
-  	.navbar li.navmenu {
-			display: block;
-			font-size: 1.5em;
-			text-align: center;
-  	}
+	.navbar li.navmenu {
+		display: block;
+		font-size: 1.5em;
+		text-align: center;
+	}
 
 	.navbar.responsive {
 			position: relative;
@@ -27,9 +27,17 @@
 			display: block;
 			text-align: left;
 	}
+
+	#home-gallery {
+		justify-content: space-between;
+	}
+
+	.caption {
+		font-size: 1.25em;
+	}
 }
 
-@media all and (min-width: 43.75em){
+@media all and (min-width: 701px){
 	#main-header h1 {
 		float: left;
 		font-size: 1.5em;
@@ -66,13 +74,21 @@
 		width: 275px;
 	}
 
-	#home-gallery {
-		flex-direction: row;
+	.headline {
+		font-size: 2.5em;
 	}
 
-	#home-gallery li {
-		width: 175px;
-		margin: 0 15px;
+	.subheadline {
+		font-size: 1.5em;
+	}
+
+	#home-gallery {
+		width: 600px;
+	}
+
+	.container svg {
+		height: 75%;
+		width: 75%;
 	}
 	
 	.caption {
@@ -108,7 +124,7 @@
 
 }
 
-@media all and (min-width: 53.75em){
+@media all and (min-width: 860px){
 	h2 {
 		font-size: 1.5em;
 	}
@@ -117,10 +133,10 @@
 		font-size: 1.4em;
 	}
 	
-    .navbar li a {
-        font-size: 1.25em;
+	.navbar li a {
+		font-size: 1.25em;
 		padding: 0 10px;
-    }
+	}
 
 	#illustrations-gallery {
 		-moz-column-count: 3;
@@ -139,16 +155,12 @@
 		width: 80%;
 	}
 	
-	.caption {
-		font-size: 1.7em;
-	}
-	
 	.modal-content, #caption {
 		width: 80%;
 	}
 }
 
-@media all and (min-width: 58.75em){
+@media all and (min-width: 940px){
 	h2 {
 		line-height: 1em;
 	}
@@ -157,9 +169,9 @@
 		font-size: 1.4em;
 	}
 	
-    .navbar li a {
+  .navbar li a {
 		padding: 0 13px;
-    }
+  }
 
 	#about-content {
 		width: 55%;
@@ -170,47 +182,34 @@
 		margin-left: 25px;
 	}
 
-	#home-gallery li {
-		width: 200px;
-		/*margin: 0 15px;*/
+	#home-gallery {
+		width: 700px;
 	}
 	
-	.caption {
-		font-size: 1.7em;
-	}
 }
 
-@media all and (min-width: 81.25em){	
+@media all and (min-width: 1300px){	
 	h1 {
 		font-size: 2em;
 	}
-	
+
 	h2 {
 		font-size: 1.65em;
 	}
-	
-    .navbar li a {
+
+	.navbar li a {
 		font-size: 1.3em;
 		padding: 0 25px;
-    }
+	}
 
 	#main-content {
 		width: 75%;
 	}
-	
-	#home-gallery li {
-		width: 225px;
-		margin: 0 25px;
-	}
-	
-	.caption {
-		font-size: 2em;
-	}
-	
+
 	#about-content {
 		width: 50%;
 	}
-	
+
 	.resume-container {
 		width: 50%;
 	}
