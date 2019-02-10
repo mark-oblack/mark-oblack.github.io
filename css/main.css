@@ -25,7 +25,7 @@ html, body {
 
 body {
     background-color: #ECF0F1;
-    color: #283744;
+    color: ##3d3d3d;
     display: flex;
     flex-direction: column;
     font-family: proxima-nova, sans-serif;
@@ -34,14 +34,14 @@ body {
 }
 
 h1 {
-    color: #283744;
+    color: #3d3d3d;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
 
 h2, h3 {
-	color: #283744;
+	color: #3d3d3d;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -88,7 +88,7 @@ Nav Bar
 ------------------*/
 
 .navbar {
-	background-color: #283744;
+	background-color: #3d3d3d;
 }
 
 .navbar .navmenu {
@@ -111,7 +111,7 @@ Nav Bar
 }
 
 .navbar li a {
-	background-color: #283744;
+	background-color: #3d3d3d;
 	color: #ECF0F1;
 	font-size: 1.2em;
     text-decoration: none;
@@ -155,8 +155,8 @@ Nav Bar
 Main Header
 ------------------*/
 #main-header {
-	background-color:#283744;
-	border-bottom: solid 3px #ee7546;
+	background-color:#3d3d3d;
+	/* border-bottom: solid 3px #ee7546; */
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
 	position: fixed;
 	top: 0;
@@ -166,7 +166,6 @@ Main Header
 }
 
 #main-header h1 {
-	background-color:#283744;
 	color: #ECF0F1;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
@@ -307,7 +306,7 @@ Footer
 ------------------*/
 
 footer{
-	color: #283744;
+	color: #3d3d3d;
 	display: block;
 	margin: 10px 0;
 	text-align: center;
@@ -323,11 +322,10 @@ footer p {
 /*------------------
 Footer Icons
 ------------------*/
-.icon-flex {
+.icon-flex,
+.home-icon-flex {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	align-items: center;
 }
 
 .icon-flex .fa-github,
@@ -335,17 +333,57 @@ Footer Icons
 .icon-flex .fa-dribbble,
 .icon-flex .fa-twitter,
 .icon-flex .fa-envelope {
-  	color: #283744;
+  	color: #3d3d3d;
   	font-size: 2.25em;
   	margin: 0 15px;
 }
 
-.icon-flex .fa-github:hover,
+.home-icon-flex .fa-github,
+.home-icon-flex .fa-linkedin-in,
+.home-icon-flex .fa-dribbble,
+.home-icon-flex .fa-twitter,
+.home-icon-flex .fa-envelope {
+  	color: #fff;
+  	font-size: 2.25em;
+  	margin: 0 15px;
+}
+
+/* .icon-flex .fa-github:hover,
 .icon-flex .fa-linkedin-in:hover,
 .icon-flex .fa-dribbble:hover,
 .icon-flex .fa-twitter:hover,
 .icon-flex .fa-envelope:hover {
-	color: #445d72;
+	color: #636e72;
+	transition: 0.2s ease;
+} */
+
+.home-icon-flex .fa-github:hover,
+.icon-flex .fa-github:hover {
+	color: #6e5494;
+	transition: 0.2s ease;
+}
+
+.home-icon-flex .fa-linkedin-in:hover,
+.icon-flex .fa-linkedin-in:hover {
+	color: #0077b5;
+	transition: 0.2s ease;
+}
+
+.home-icon-flex .fa-dribbble:hover,
+.icon-flex .fa-dribbble:hover {
+	color: #ea4c89;
+	transition: 0.2s ease;
+}
+
+.home-icon-flex .fa-twitter:hover,
+.icon-flex .fa-twitter:hover{
+	color: #1da1f2;
+	transition: 0.2s ease;
+}
+
+.home-icon-flex .fa-envelope:hover,
+.icon-flex .fa-envelope:hover {
+	color: #1dd1a1;
 	transition: 0.2s ease;
 }
 
@@ -360,12 +398,14 @@ Home Page
 }
 
 .headline {
+	color: #fff;
 	font-size: 2em;
 	margin-top: 20px;
 	text-align: center;
 }
 
 .subheadline {
+	color: #fff;
 	font-size: 1.25em;
 	font-weight: 400;
 	text-align: center;
@@ -392,7 +432,7 @@ svg {
 	margin: 0 auto;
 	height: 80%;
 	width: 80%;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
   }
 
 .about-icon:hover #outer-circle,
@@ -406,21 +446,25 @@ svg {
 .web-icon:hover #closing-bracket1,
 .web-icon:hover #closing-bracket2, 
 .web-icon:hover #slash {
-	stroke: #283744;
+	/* stroke: #283744; */
+	stroke: #fff;
 	transition: 0.15s ease-in;
 }
 
 .design-icon:hover #pen-tip-circle {
-	fill: #283744;
+	/* fill: #283744; */
+	fill: #fff;
 	transition: 0.15s ease-in;
 }
 
 .caption {
-	color: #283744;
+	/* color: #283744; */
+	color: #fff;
 	font-size: 1em;
 	font-weight: 400;
 	text-align: center;
 }
+
 
 
 
