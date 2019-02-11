@@ -62,8 +62,7 @@
 	}
 	
 	.navbar li a:hover {
-		background-color: #283744;
-		color:#E74C3C;
+		color: #0fbcf9;
 	}
 
 	#main-content {
@@ -72,6 +71,10 @@
 	
 	#profile-pic {
 		width: 275px;
+	}
+
+	.skills-container {
+		width: 450px;
 	}
 
 	.headline {

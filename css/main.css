@@ -47,6 +47,13 @@ h2, h3 {
 	font-weight: 600;
 }
 
+h4 {
+	color: #3d3d3d;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
 h2 {
     font-size: 1.6em;
 	padding: 20px 0;
@@ -98,6 +105,7 @@ Nav Bar
 .navbar .navmenu {
 	display: none;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .navbar ul {
@@ -106,23 +114,24 @@ Nav Bar
 }
 
 .navbar ul li a {
+	color: #ECF0F1;
+	font-size: 1.2em;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-    display:inline-block;
 	padding: 10px;
 	width: 100%;
 }
 
-.navbar li a {
+/* .navbar li a {
 	background-color: #3d3d3d;
 	color: #ECF0F1;
 	font-size: 1.2em;
     text-decoration: none;
-}
+} */
 
 .navbar .active {
-    color: #ee7546;
+    color: #FA8231;
 }
 
 .dropdown-content {
@@ -387,7 +396,7 @@ Footer Icons
 
 .home-icon-flex .fa-envelope:hover,
 .icon-flex .fa-envelope:hover {
-	color: #1dd1a1;
+	color: #0fb9b1;
 	transition: 0.2s ease;
 }
 
@@ -484,58 +493,61 @@ About Page
 	max-width: 100%;
 }
 
-.resume,
-.files {
+.skills-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills-container div {
+	margin-right: 20px
+}
+
+.skills-list {
+	list-style-type: circle;
+	margin: 10px 0 10px 45px;
+}
+
+.skills-list li {
+	line-height: 1.5em;
+}
+
+.resume {
 	display: block;
 	text-align: center;
 	padding-top: 25px;
 }
 
 .resume-button {
-	background-color: #283744;
+	background-color: #3d3d3d;
     border: none;
 	border-radius: 5px;
     color: #ECF0F1;
     padding: 16px;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: proxima-nova, sans-serif;
+	font-style: normal;
 	font-weight: 400;
     font-size: 1em;
     letter-spacing: 1px;
 	width: 100px;
 }
 
-.resume-button:hover,
-.files-button:hover {
-    background-color:#445d72;
-    transition:0.2s;
-}
-
-.files-button {
-	background-color: #283744;
-    border: none;
-	border-radius: 5px;
-    color: #ECF0F1;
-    padding: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-    font-size: 1em;
-    letter-spacing: 1px;
-	width: 150px;
+.resume-button:hover {
+    background-color:#0fbcf9;
+    transition:0.2s ease;
 }
 
 
 
-/*------------------
-Projects Page 
-------------------*/
+/*---------------------------------------------------
+Web/UX Page 
+----------------------------------------------------*/
 .web-card {
 	background-color: #DEE0E0;
 	border-radius: 15px;
 	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+	color: #3d3d3d;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -543,6 +555,7 @@ Projects Page
 }
 
 .web-card h3 {
+	color: #3d3d3d;
 	font-size: 1.2em;
 	margin-top: 20px;
 	text-align: center;
@@ -568,43 +581,39 @@ Projects Page
 
 
 
+/*---------------------------------------------------
+AEO Project
+----------------------------------------------------*/
+ .aeo-project-list {
+	 list-style-type: upper-alpha;
+	 margin-left: 45px;
+ }
 
-/*------------------
-Contact Page
-------------------*/
-
-.contact-info {
-	list-style: none;
-	margin: 0;
-	padding-bottom: 20px;
+.files {
+	display: block;
+	text-align: center;
+	padding-top: 25px;
 }
 
-.contact-info li {
-	margin-bottom: 15px;
+.files-button {
+	background-color: #3d3d3d;
+    border: none;
+	border-radius: 5px;
+    color: #ECF0F1;
+    padding: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+    font-size: 1em;
+	letter-spacing: 1px;
+	margin: 10px;
+	width: 150px;
 }
 
-.contact-info a {
-	text-align: left;
+.files-button:hover {
+    background-color:#0fbcf9;
+    transition:0.2s ease;
 }
-
-.contact-info .fa-twitter,
-.contact-info .fa-envelope,
-.contact-info .fa-linkedin-in {
-  	color: #283744;
-  	font-size: 1.5em;
-}
-
-.contact-info .fa-twitter,
-.contact-info .fa-envelope {
-	margin-right: 15px;
-}
-
-.contact-info .fa-linkedin-in {
-	margin-right: 20px;
-}
-
-
-
-
-
 
