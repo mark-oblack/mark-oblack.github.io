@@ -63,6 +63,7 @@
 	
 	.navbar li a:hover {
 		color: #0fbcf9;
+		transition: 0.2s ease;
 	}
 
 	#main-content {

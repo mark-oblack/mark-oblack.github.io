@@ -189,7 +189,10 @@ Main Header
     padding: 20px 10px;
 }
 
-
+#main-header h1:hover {
+	color: #0fbcf9;
+	transition: 0.2s ease;
+}
 
 /*------------------
 Main Content
