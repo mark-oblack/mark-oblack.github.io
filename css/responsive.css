@@ -28,6 +28,10 @@
 			text-align: left;
 	}
 
+	.navbar.responsive li:not(:first-child) {
+		padding: 12px;
+	}
+
 	#home-gallery {
 		justify-content: space-between;
 	}
