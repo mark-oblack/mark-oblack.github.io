@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+@media all and (min-width: 501px){
+	.page-title {
+		font-size: 4em;
+		margin: 60px 0;
+	}
+}
+
 @media screen and (max-width: 700px) {	
   .navbar li:not(:first-child) {
 	  display: none;
@@ -113,6 +120,8 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1000px;
 	}
 	
 	h3 {
@@ -133,9 +142,9 @@
 }
 
 @media all and (min-width: 860px){
-	h2 {
+	/* h2 {
 		font-size: 1.5em;
-	}
+	} */
 	
 	h3{
 		font-size: 1.4em;
@@ -201,9 +210,9 @@
 		font-size: 2em;
 	}
 
-	h2 {
+	/* h2 {
 		font-size: 1.65em;
-	}
+	} */
 
 	.navbar li a {
 		font-size: 1.3em;
@@ -222,9 +231,9 @@
 		width: 50%;
 	}
 
-	.web-card {
-		width: 32%;
-	}
+	/* .web-card {
+		width: 500px;
+	} */
 }
 
 @media all and (min-width: 1650px){
