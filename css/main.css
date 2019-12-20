@@ -4,8 +4,6 @@
 /*------------------
 Fonts
 ------------------*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url("https://use.typekit.net/hdp5hbs.css");
 
 
@@ -25,7 +23,7 @@ html, body {
 
 body {
     background-color: #ECF0F1;
-    color: ##3d3d3d;
+    color: #3d3d3d;
     display: flex;
     flex-direction: column;
     font-family: proxima-nova, sans-serif;
@@ -83,7 +81,7 @@ a {
 }
 
 a:hover {
-    color:#E74C3C;
+    color:#FA8231;
     transition: 0.2s;
 }
 
@@ -122,15 +120,8 @@ Nav Bar
 	width: 100%;
 }
 
-/* .navbar li a {
-	background-color: #3d3d3d;
-	color: #ECF0F1;
-	font-size: 1.2em;
-    text-decoration: none;
-} */
-
 .navbar .active {
-    color: #FA8231;
+	color: #FFD23F;
 }
 
 .dropdown-content {
@@ -168,7 +159,6 @@ Main Header
 ------------------*/
 #main-header {
 	background-color:#3d3d3d;
-	/* border-bottom: solid 3px #ee7546; */
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
 	position: fixed;
 	top: 0;
@@ -189,8 +179,8 @@ Main Header
 }
 
 #main-header h1:hover {
-	color: #0fbcf9;
-	transition: 0.2s ease;
+	color: #FA8231;
+	transition: 0.3s ease;
 }
 
 /*------------------
@@ -263,11 +253,6 @@ Modal Styles
 .myImg {
 	cursor: pointer;
 }
-/*.myImg:hover {
-	cursor: pointer;
-	opacity: 0.75;
-	transition: 0.2s ease;
-}*/
 
 .modal {
     display: none;
@@ -368,43 +353,34 @@ Footer Icons
   	margin: 0 15px;
 }
 
-/* .icon-flex .fa-github:hover,
-.icon-flex .fa-linkedin-in:hover,
-.icon-flex .fa-dribbble:hover,
-.icon-flex .fa-twitter:hover,
-.icon-flex .fa-envelope:hover {
-	color: #636e72;
-	transition: 0.2s ease;
-} */
-
 .home-icon-flex .fa-github:hover,
 .icon-flex .fa-github:hover {
 	color: #6e5494;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 }
 
 .home-icon-flex .fa-linkedin-in:hover,
 .icon-flex .fa-linkedin-in:hover {
 	color: #0077b5;
-	transition: 0.2s ease;
+	transition: 0.3 ease;
 }
 
 .home-icon-flex .fa-dribbble:hover,
 .icon-flex .fa-dribbble:hover {
 	color: #ea4c89;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 }
 
 .home-icon-flex .fa-twitter:hover,
 .icon-flex .fa-twitter:hover{
 	color: #1da1f2;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 }
 
 .home-icon-flex .fa-envelope:hover,
 .icon-flex .fa-envelope:hover {
 	color: #0fb9b1;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 }
 
 
@@ -444,7 +420,6 @@ Home Page
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* margin: 0 5px; */
 }
 
 svg {
@@ -466,19 +441,16 @@ svg {
 .web-icon:hover #closing-bracket1,
 .web-icon:hover #closing-bracket2, 
 .web-icon:hover #slash {
-	/* stroke: #283744; */
 	stroke: #fff;
-	transition: 0.15s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .design-icon:hover #pen-tip-circle {
-	/* fill: #283744; */
 	fill: #fff;
-	transition: 0.15s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .caption {
-	/* color: #283744; */
 	color: #fff;
 	font-size: 1em;
 	font-weight: 400;
@@ -541,8 +513,8 @@ About Page
 }
 
 .resume-button:hover {
-    background-color:#0fbcf9;
-    transition:0.2s ease;
+    background-color:#FA8231;
+    transition:0.3s ease;
 }
 
 
@@ -551,7 +523,6 @@ About Page
 Web/UX Page 
 ----------------------------------------------------*/
 .web-card {
-	/* background-color: #FA8231; */
 	border-radius: 0px;
 	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
 	color: #fff !important;
@@ -571,16 +542,13 @@ Web/UX Page
 
 .web-card p {
 	border-radius: 0 0 15px 15px;
-	/*height: 100%;*/
-	/* padding: 5px 25px; */
 	margin: 0 auto;
 	width: 85%;
 }
 
 .web-card:hover {
 	background-color: #0fbcf9;
-	transition: 0.25s ease;
-	/* box-shadow: 0px 5px 20px rgba(52,73,94,0.3); */
+	transition: 0.3s ease;
 }
 
 .yellow {
@@ -684,7 +652,6 @@ UX Project Pages
 }
 
 .files-button:hover {
-    background-color:#0fbcf9;
-    transition: 0.2s ease;
+    background-color:#FA8231;
+    transition: 0.3s ease;
 }
-

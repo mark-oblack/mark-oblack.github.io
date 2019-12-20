@@ -64,7 +64,7 @@
 	}
 	
 	.navbar ul li {
-		display:inline-block;
+		display: inline-block;
 		padding: 15px 2px 0 2px;
 	}
 
@@ -73,7 +73,7 @@
 	}
 	
 	.navbar li a:hover {
-		color: #0fbcf9;
+		color: #FA8231;
 		transition: 0.2s ease;
 	}
 
@@ -162,7 +162,6 @@
 	}
 	
 	#profile-pic {
-		display: inline-block;
 		float: right;
 		margin-left: 20px;
 		width: 300px;
@@ -197,9 +196,9 @@
 		font-size: 1.4em;
 	}
 	
-  .navbar li a {
-		padding: 0 13px;
-  }
+	.navbar li a {
+			padding: 0 13px;
+	}
 
 	#about-content {
 		width: 55%;
@@ -212,18 +211,13 @@
 
 	#home-gallery {
 		width: 700px;
-	}
-	
+	}	
 }
 
 @media all and (min-width: 1300px){	
 	h1 {
 		font-size: 2em;
 	}
-
-	/* h2 {
-		font-size: 1.65em;
-	} */
 
 	.navbar li a {
 		font-size: 1.3em;
@@ -241,10 +235,6 @@
 	.resume-container {
 		width: 50%;
 	}
-
-	/* .web-card {
-		width: 500px;
-	} */
 }
 
 @media all and (min-width: 1650px){
