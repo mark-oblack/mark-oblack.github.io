@@ -137,15 +137,9 @@
 	.resume {
 		margin: 0 10px;
 	}
-	
-
 }
 
 @media all and (min-width: 860px){
-	/* h2 {
-		font-size: 1.5em;
-	} */
-	
 	h3{
 		font-size: 1.4em;
 	}
