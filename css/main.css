@@ -599,6 +599,17 @@ Web/UX Page
 	background-color: #20bf6b;
 }
 
+
+
+/*---------------------------------------------------
+UX Project Pages
+----------------------------------------------------*/
+
+.aeo-project-list {
+	list-style-type: upper-alpha;
+	margin-left: 45px;
+}
+
 .project-img {
 	display: block;
 	margin: 0 auto;
@@ -607,13 +618,47 @@ Web/UX Page
 	max-width: 800px;
 }
 
-/*---------------------------------------------------
-AEO Project
-----------------------------------------------------*/
- .aeo-project-list {
-	 list-style-type: upper-alpha;
-	 margin-left: 45px;
- }
+.ux-project-headline {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.ux-project-content {
+	display: block;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.persona-container {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+	margin-bottom: 20px;
+}
+
+.persona-container h4 {
+	font-size: 1em;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.ux-sketch-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+}
+
+.ux-sketch {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.prototype-btn-container {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
 
 .files {
 	display: block;
@@ -635,11 +680,11 @@ AEO Project
     font-size: 1em;
 	letter-spacing: 1px;
 	margin: 10px;
-	width: 150px;
+	width: 200px;
 }
 
 .files-button:hover {
     background-color:#0fbcf9;
-    transition:0.2s ease;
+    transition: 0.2s ease;
 }
 

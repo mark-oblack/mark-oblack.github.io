@@ -175,6 +175,17 @@
 	.modal-content, #caption {
 		width: 80%;
 	}
+
+	.ux-sketch-container {
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.ux-sketch {
+		margin: 5px;
+		width: 48.5%;
+	}
 }
 
 @media all and (min-width: 940px){
