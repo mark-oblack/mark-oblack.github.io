@@ -140,7 +140,6 @@ Top Navbar
 
 
 
-
 /*------------------
 Main Content
 ------------------*/
@@ -151,7 +150,7 @@ Main Content
     flex: 1;
     flex-direction: column;
 	margin: 0 auto;
-    width: 88%;
+    width: 85%;
 }
 
 #home-main-content {
@@ -501,7 +500,7 @@ Web/UX Page
 }
 
 .web-card:hover {
-	background-color: #0fbcf9;
+	background-color: #FA8231;
 	transition: 0.3s ease;
 }
 

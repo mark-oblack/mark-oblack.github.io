@@ -125,6 +125,10 @@
 		margin-left: 20px;
 		width: 300px;
 	}
+
+	#about-content {
+		width: 50%;
+	}
 	
 	#main-content {
 		width: 80%;
@@ -156,7 +160,7 @@
 	}
 
 	#about-content {
-		width: 55%;
+		width: 45%;
 	}
 	
 	#profile-pic {
@@ -179,7 +183,7 @@
 	}
 
 	#about-content {
-		width: 50%;
+		width: 55%;
 	}
 
 	.resume-container {
