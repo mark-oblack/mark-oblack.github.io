@@ -146,6 +146,7 @@
 
 	.ux-sketch {
 		margin: 5px;
+		height: auto;
 		width: 48.5%;
 	}
 }
