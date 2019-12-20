@@ -576,6 +576,10 @@ UX Project Pages
 	width: 100%;
 }
 
+.ux-sketch img {
+	width: 100%;
+}
+
 .prototype-btn-container {
 	display: block;
 	text-align: center;
