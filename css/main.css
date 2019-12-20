@@ -38,20 +38,6 @@ h1 {
 	font-weight: 700;
 }
 
-h2, h3 {
-	color: #3d3d3d;
-	font-family: proxima-nova, sans-serif;
-	font-style: normal;
-	font-weight: 600;
-}
-
-h4 {
-	color: #3d3d3d;
-	font-family: proxima-nova, sans-serif;
-	font-style: normal;
-	font-weight: 600;
-}
-
 h2 {
 	padding: 20px 0;
 }
@@ -59,6 +45,13 @@ h2 {
 h3 {
     font-size: 1.2em;
 	padding-bottom: 20px;
+}
+
+h2, h3, h4 {
+	color: #3d3d3d;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 600;
 }
 
 img {
@@ -92,96 +85,61 @@ a:hover {
 
 
 /*------------------
-Nav Bar
+Top Navbar
 ------------------*/
-
-.navbar {
+.topnav {
 	background-color: #3d3d3d;
-}
-
-.navbar .navmenu {
-	display: none;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-.navbar ul li a {
-	color: #ECF0F1;
-	font-size: 1.2em;
-	font-family: proxima-nova, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	padding: 10px;
-	width: 100%;
-}
-
-.navbar .active {
-	color: #FFD23F;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-	overflow: auto;
-}
-
-.dropdown-content li a {
-	background-color: #1f2c35;
-	border-bottom: 2px solid #283744;
-	display: block;
-    text-align: left;
-}
-
-.dropdown .dropdown-content.show {
-	display: block;
-	position: relative;
-}
-
-.fa-sort-desc {
-	display: inline-block;
-	padding: 0 10px;
-}
-
-.dropdown:hover ul li {
-    display: block;
-	padding: 0;
-}
-
-
-
-/*------------------
-Main Header
-------------------*/
-#main-header {
-	background-color:#3d3d3d;
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	overflow: hidden;
 	position: fixed;
 	top: 0;
-	left:0;
+	left: 0;
 	width: 100%;
 	z-index: 1000;
+  }
+  
+.topnav a {
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.3em;
 }
 
-#main-header h1 {
-	color: #ECF0F1;
+.topnav a {
+	float: left;
+}
+
+.topnav-items {
+	float: right;
+}
+
+.topnav h1 {
+	color: #f2f2f2;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 600;
-    text-align:center;
-	font-size: 1.9em;
+    text-align: left;
 	letter-spacing: .5px;
-    padding: 20px 10px;
 }
-
-#main-header h1:hover {
+  
+.topnav a:hover,
+.topnav h1:hover {
 	color: #FA8231;
 	transition: 0.3s ease;
 }
+
+.topnav a.active {
+	color: #FFD23F;	
+}
+
+.topnav .icon {
+	display: none;
+}
+
+
+
 
 /*------------------
 Main Content
@@ -203,7 +161,6 @@ Main Content
 
 #main-content {
 	min-height: calc(100vh - 82px);
-	padding-top: 7em;
 	padding-bottom: 2.5em;
 }
 
@@ -216,7 +173,7 @@ Main Content
 	font-size: 2.5em;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 30px 0;
+	margin: 80px 0 40px 0;
 }
 
 /*------------------
@@ -300,7 +257,6 @@ Modal Styles
     text-decoration: none;
     cursor: pointer;
 }
-
 
 
 
@@ -420,7 +376,7 @@ Home Page
 	justify-content: center;
 }
 
-svg {
+.container svg {
 	display: block;
 	margin: 0 auto;
 	height: 80%;
@@ -617,6 +573,7 @@ UX Project Pages
 
 .ux-sketch {
 	margin-bottom: 10px;
+	height: auto;
 	width: 100%;
 }
 
