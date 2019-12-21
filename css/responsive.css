@@ -182,6 +182,12 @@
 		width: 75%;
 	}
 
+	.about-container {
+		display: block;
+		margin: 0 auto;
+		width: 85%;
+	}
+
 	#about-content {
 		width: 55%;
 	}
