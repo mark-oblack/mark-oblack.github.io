@@ -124,7 +124,7 @@ Top Navbar
 	letter-spacing: .5px;
 }
   
-.topnav a:hover,
+.topnav-items a:hover,
 .topnav h1:hover {
 	color: #FA8231;
 	transition: 0.3s ease;
