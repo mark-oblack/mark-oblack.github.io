@@ -18,7 +18,6 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-        <script type="text/javascript" src="js/myscripts.js"></script>
     </head>
 
     <body>
@@ -78,40 +77,40 @@
                     <h2 class="ux-project-headline">Task Flows</h2>
                     <div class="ux-sketch-container">
                         <div class="ux-sketch">
-                            <img src="assets/web/flint-assets/task-flow-01.jpg" alt="Image: Flink Purchase User Task Flow">
+                            <img class="myImg" src="assets/web/flint-assets/task-flow-01.jpg" alt="Image: Flink Purchase User Task Flow">
                         </div>
                         <div class="ux-sketch">
-                            <img src="assets/web/flint-assets/task-flow-02.jpg" alt="Image: Flink Purchase User Task Flow">
+                            <img class="myImg" src="assets/web/flint-assets/task-flow-02.jpg" alt="Image: Flink Purchase User Task Flow">
                         </div>
                     </div>
                     <h2 class="ux-project-headline">Sketches</h2>
                     <div class="ux-sketch-container">
                         <div class="ux-sketch">
-                            <img alt="Image: Sketch of Flint home screen" src="assets/web/flint-assets/flint-sketches_Page_1.jpg">
+                            <img class="myImg" alt="Image: Sketch of Flint home screen" src="assets/web/flint-assets/flint-sketches_Page_1.jpg">
                         </div>
                         <div class="ux-sketch">
-                            <img alt="Image: Sketch of Products/Search Results screen" src="assets/web/flint-assets/flint-sketches_Page_3.jpg">
+                            <img class="myImg" alt="Image: Sketch of Products/Search Results screen" src="assets/web/flint-assets/flint-sketches_Page_3.jpg">
                         </div>
                         <div class="ux-sketch">
-                            <img alt="Image: Sketch of Product screen" src="assets/web/flint-assets/flint-sketches_Page_4.jpg">
+                            <img class="myImg" alt="Image: Sketch of Product screen" src="assets/web/flint-assets/flint-sketches_Page_4.jpg">
                         </div>
                         <div class="ux-sketch">
-                            <img alt="Image: Sketch of Checkout screen" src="assets/web/flint-assets/flint-sketches_Page_5.jpg">
+                            <img class="myImg" alt="Image: Sketch of Checkout screen" src="assets/web/flint-assets/flint-sketches_Page_5.jpg">
                        </div>
                     </div>
                     <h2 class="ux-project-headline">Wireframes</h2>
                     <div class="ux-sketch-container">
                         <div class="ux-sketch">
-                            <img alt="Image: Wireframe Flint Home screen" src="assets/web/flint-assets/home-screen.png">
+                            <img class="myImg" alt="Image: Wireframe Flint Home screen" src="assets/web/flint-assets/home-screen.png">
                         </div>
                         <div class="ux-sketch">
-                            <img alt="Image: Wireframe of Product Results screen" src="assets/web/flint-assets/product-results.png">
+                            <img class="myImg" alt="Image: Wireframe of Product Results screen" src="assets/web/flint-assets/product-results.png">
                         </div>
                         <div class="ux-sketch">
-                            <img alt="Image: Wireframe of Product Comparison screen" src="assets/web/flint-assets/compare-screen3.png">
+                            <img class="myImg" alt="Image: Wireframe of Product Comparison screen" src="assets/web/flint-assets/compare-screen3.png">
                         </div>
                         <div class="ux-sketch">
-                            <img alt="Image: Wireframe of Checkout screen" src="assets/web/flint-assets/checkout-1.png">
+                            <img class="myImg" alt="Image: Wireframe of Checkout screen" src="assets/web/flint-assets/checkout-1.png">
                        </div>
                     </div>
                     <div class="files">
@@ -121,6 +120,13 @@
                         <a href="https://duq.box.com/v/flint-project-files" target="_blank">
                             <button class="files-button">Project Files</button>
                         </a>
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
                     </div>
                 </div>
             </section> <!--main-content-->
@@ -142,8 +148,10 @@
                         <i class="far fa-envelope"></i>
                     </a>
                 </div>
-                <p>&copy; 2019 Mark E. O&#8217;Black</p>
+                <p>&copy; 2020 Mark E. O&#8217;Black</p>
             </footer>
         </div> <!-- wrapper -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/myscripts.js"></script>
     </body>
 </html>
