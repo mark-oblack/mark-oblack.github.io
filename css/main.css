@@ -450,7 +450,7 @@ About Page
 }
 
 .resume-button {
-	background-color: #3d3d3d;
+	background-color: #FA8231;
     border: none;
 	border-radius: 5px;
     color: #ECF0F1;
@@ -466,7 +466,7 @@ About Page
 }
 
 .resume-button:hover {
-    background-color:#FA8231;
+    background-color:#FBA469;
     transition:0.3s ease;
 }
 
@@ -600,7 +600,7 @@ UX Project Pages
 }
 
 .files-button {
-	background-color: #3d3d3d;
+	background-color: #FA8231;
     border: none;
 	border-radius: 5px;
     color: #ECF0F1;
@@ -617,6 +617,6 @@ UX Project Pages
 }
 
 .files-button:hover {
-    background-color:#FA8231;
+    background-color:#FBA469;
     transition: 0.3s ease;
 }
