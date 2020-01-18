@@ -453,6 +453,7 @@ About Page
 	background-color: #FA8231;
     border: none;
 	border-radius: 5px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
     color: #ECF0F1;
     padding: 16px;
     cursor: pointer;
@@ -603,6 +604,7 @@ UX Project Pages
 	background-color: #FA8231;
     border: none;
 	border-radius: 5px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
     color: #ECF0F1;
     padding: 16px;
     cursor: pointer;
