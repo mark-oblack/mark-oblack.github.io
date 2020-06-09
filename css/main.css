@@ -96,19 +96,20 @@ Top Navbar
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-  }
+}
   
 .topnav a {
 	display: block;
 	color: #f2f2f2;
+	float: left;
 	text-align: center;
 	padding: 15px 20px;
 	text-decoration: none;
 	font-size: 1.3em;
 }
 
-.topnav a {
-	float: left;
+#nav-toggle {
+	width: 20px;
 }
 
 .topnav-items {
