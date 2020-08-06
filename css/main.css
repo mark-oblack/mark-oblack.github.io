@@ -62,6 +62,10 @@ img {
 	color: #FA8231;
 }
 
+strong {
+	font-weight: 700;
+}
+
 
 
 /*------------------
@@ -535,8 +539,8 @@ Web/UX Page
 UX Project Pages
 ----------------------------------------------------*/
 
-.aeo-project-list {
-	list-style-type: upper-alpha;
+.project-list {
+	list-style: disc;
 	margin-left: 45px;
 }
 
