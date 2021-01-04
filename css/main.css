@@ -398,7 +398,10 @@ Home Page
 .web-icon:hover #outer-circle-3,
 .web-icon:hover #closing-bracket1,
 .web-icon:hover #closing-bracket2, 
-.web-icon:hover #slash {
+.web-icon:hover #slash,
+.writing-icon:hover #outer-circle,
+.writing-icon:hover #pencil-shape,
+.writing-icon:hover #pencil-line {
 	stroke: #fff;
 	transition: 0.3s ease-in;
 }
