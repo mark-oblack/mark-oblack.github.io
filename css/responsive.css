@@ -1,12 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media all and (min-width: 501px){
-	.page-title {
-		font-size: 4em;
-	}
-}
-
 @media screen and (max-width: 750px) {
 	.topnav a:not(:first-child),
 	.topnav-items {
@@ -25,9 +19,11 @@
 	#home-gallery {
 		justify-content: space-between;
 	}
+}
 
-	.caption {
-		font-size: 1.25em;
+@media all and (min-width: 501px){
+	.page-title {
+		font-size: 4em;
 	}
 }
 
@@ -50,6 +46,12 @@
 	}
 }
 
+@media all and (min-width: 450px){
+	.caption {
+		font-size: 1.25em;
+	}
+}
+
 @media all and (min-width: 701px){
 	h3 {
 		font-size: 1.3em;
@@ -64,7 +66,12 @@
 	}
 
 	.headline {
-		font-size: 2.5em;
+		font-size: 4em;
+	}
+
+	#home-main-content {
+		justify-content: center;
+		min-height: calc(100vh - 310px);
 	}
 
 	.subheadline {
