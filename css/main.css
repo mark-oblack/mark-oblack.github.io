@@ -160,7 +160,7 @@ Main Content
 
 #home-main-content {
 	justify-content: center;
-	min-height: calc(100vh - 285px);
+	min-height: calc(100vh - 280px);
 }
 
 #main-content {
@@ -297,8 +297,8 @@ Footer Icons
 .icon-flex .fa-twitter,
 .icon-flex .fa-envelope {
   	color: #3d3d3d;
-  	font-size: 2.25em;
-  	margin: 0 15px;
+  	font-size: 1.5em;
+  	margin: 0 15px 5px 15px;
 }
 
 .home-icon-flex .fa-github,
@@ -307,8 +307,8 @@ Footer Icons
 .home-icon-flex .fa-twitter,
 .home-icon-flex .fa-envelope {
   	color: #fff;
-  	font-size: 2.25em;
-  	margin: 0 15px;
+  	font-size: 1.5em;
+  	margin: 0 15px 5px 15px;
 }
 
 .home-icon-flex .fa-github:hover,
