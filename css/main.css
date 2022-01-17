@@ -638,5 +638,6 @@ Writing Page
 ----------------------------------------------------*/
 .request-samples {
 	padding-top: 15px;
+	padding-bottom: 0 !important;
 	text-align: center;
 }
