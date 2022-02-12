@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark O'Black | DMA 574</title>
+    <link rel='icon' href='assets/mo-logo-favicon.png' type='image/x-icon'/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+    <section id="wrapper">
+        <header>
+            <nav class="topnav" id="myTopnav">
+                <a href="http://www.jma.duq.edu/users/oblackm/pub/dma574/index.html">
+                    <h1>Mark O&#8217;Black</h1>
+                </a>
+                <div class="topnav-items" id="myTopnavItems">
+                    <a href="#about">About</a>
+                    <a href="#assignments">Assignments</a>
+                    <a href="http://www.jma.duq.edu/users/kolberl/pub/dma574/" target="_blank">Class Page</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="headline">
+                <h1 class="animated bounceInDown">Mark O&#8217;Black</h1>
+                <h2 class="animated bounceInDown delay-1s">DMA 574: Interactive Design Studio</h2>
+            </div>
+            <i class="fas fa-arrow-circle-down fa-2x animated bounceInDown delay-2s" aria-hidden="true"></i>
+        </div>
+        <section id="main-content">
+            <section class="about-section">
+                <h2 class="page-title" id="about">About</h2>
+                <p>Hi, I'm Mark! I am a graduate student in the MFA Interactive Design program. I also work at Duquesne University as a Communications Specialist with Computing and Technology Services (CTS).</p>
+                <p>Outside of class and work, I enjoy running, reading, writing, and learning about design. My goal is to pursue a career in UX or communications.</p>
+            </section>
+            <h2 class="page-title" id="assignments">Assignments</h2>
+            <section class="assignment-card-container">
+                <a class="assignment-card" href="assignments/assignment01-presentation-ver2.pdf">
+                    <div>
+                        <h3>Assignment 1</h3>
+                        <p>Design Topic Research</p>
+                    </div>
+                </a>
+                <a class="assignment-card" href="assignments/assignment02-oblackm.pdf">
+                    <div>
+                        <h3>Assignment 2</h3>
+                        <p>Company Research</p>
+                    </div>
+                </a>
+                <a class="assignment-card" href="assignments/assignment03-oblackm.pdf">
+                    <div>
+                        <h3>Assignment 3</h3>
+                        <p>Design Update</p>
+                    </div>
+                </a>
+                <a class="assignment-card" href="https://duq.box.com/v/assignment04-oblackm">
+                    <div>
+                        <h3>Assignment 4</h3>
+                        <p>Identify the Opportunity</p>
+                    </div>
+                </a>
+                <a class="assignment-card" href="assignments/assignment05-oblackm.pdf">
+                    <div>
+                        <h3>Assignment 5</h3>
+                        <p>Strategic Planning</p>
+                    </div>
+                </a>
+                <a class="assignment-card" href="https://docs.google.com/presentation/d/13sZftS5YTX-6zncajMtL0IRY-YYSotFZDyHG3aN3ngE/edit?usp=sharing">
+                    <div>
+                        <h3>Assignment 6</h3>
+                        <p>Storyboarding Workshop</p>
+                    </div>
+                </a>
+            </section> <!--web card container-->
+            <div id="button">
+                <a href="http://www.jma.duq.edu/users/kolberl/pub/dma574/">Go to Class Page</a>
+            </div>
+            <footer>
+                <p>&copy; 2020 Mark E. O&#8217;Black | <a href="mailto:oblackm@duq.edu">oblackm@duq.edu | <a href="https://www.markoblack.com">markoblack.com</a></p>
+            </footer>
+        </section> <!--main-content-->
+        <script>
+            function responsiveNav() {
+                var x = document.getElementById("myTopnav");
+                var y =document.getElementById("myTopnavItems");
+                if (x.className === "topnav" && y.className === "topnav-items") {
+                x.className += " responsive";
+                y.className += " responsive";
+                } else {
+                x.className = "topnav";
+                y.className = "topnav-items";
+                }
+            }
+        </script>
+</body>
+</html>
