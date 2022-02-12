@@ -20,7 +20,7 @@ html, body {
 
 body {
     background-color: #f2f2f2;
-    color: #3d3d3d;
+    color: #2d3f50;
     display: flex;
     flex-direction: column;
     font-family: proxima-nova, sans-serif;
@@ -49,7 +49,7 @@ a {
 }
 
 .page-title {
-	color: #3d3d3d;
+	color: #2d3f50;
     font-size: 2.5em;
     font-weight: 700;
 	text-align: center;
@@ -65,11 +65,12 @@ a {
 
 @media all and (min-width: 501px){
 	.page-title {
-		font-size: 4em;
+		font-size: 3.5em;
 	}
 }
 
-.about-section {
+.about-section,
+.resume-section {
 	margin-bottom: 25px;
 }
 
@@ -79,7 +80,7 @@ a {
 Navbar
 ==========================================*/
 .topnav {
-	background-color: #3d3d3d;
+	background-color: #2d3f50;
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
 	overflow: hidden;
 	position: fixed;
@@ -115,7 +116,8 @@ Navbar
   
 .topnav-items a:hover,
 .topnav h1:hover {
-	border: 2px dashed #fa8231;
+	/* border: 2px dashed #fa8231; */
+	border: 2px dashed #eaa427;
 	transition: 0.3s ease;
 }
 
@@ -162,7 +164,7 @@ Jumbotron
 .jumbotron {
     /* background-color: #21D4FD;
 	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), center / cover no-repeat url(../assets/admin-bldg-winter02.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), center / cover no-repeat url(../assets/images/admin-bldg-winter02.jpg);
     color: #efefef;
     display: flex;
     flex-direction: column;
@@ -186,11 +188,12 @@ Jumbotron
 
 .headline h2 {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .fa-arrow-circle-down {
-	color: #fa8231;
+	/* color: #fa8231; */
+	color:#eaa427;
     margin-bottom: 100px;
 }
 
@@ -200,17 +203,18 @@ Jumbotron
     }
     
     .headline h2 {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 }
 
 
 
 /*==========================================
-Assignment Cards
+Portfolio Cards
 ==========================================*/
-.assignment-card {
-	background-color: #2364AA;
+.portfolio-card {
+	/* background-color: #2364AA; */
+	background-color: #00AFB9;
 	border-radius: 0px;
 	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
 	color: #fff !important;
@@ -223,7 +227,13 @@ Assignment Cards
     text-decoration: none;
 }
 
-.assignment-card h3 {
+.portfolio-card i {
+	color: #fff;
+	font-size: 4em;
+	margin-bottom: 15px;
+}
+
+.portfolio-card h3 {
 	color: #fff;
 	font-size: 1.5em;
 	font-weight: 600;
@@ -231,24 +241,25 @@ Assignment Cards
 	text-align: center;
 }
 
-.assignment-card p {
-	border-radius: 0 0 15px 15px;
+.portfolio-card p {
+	/* border-radius: 0 0 15px 15px; */
 	margin: 0 auto;
 	width: 85%;
 }
 
-.assignment-card:hover {
-	background-color: #fa8231;
+.portfolio-card:hover {
+	/* background-color: #fa8231; */
+	background-color:#eaa427;
 	transition: 0.3s ease;
 }
 
 @media all and (min-width: 501px){
-	.assignment-card {
+	.portfolio-card {
 		margin-bottom: 40px;
 		width: 45%;
 	}
 
-	.assignment-card-container {
+	.portfolio-card-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -257,10 +268,72 @@ Assignment Cards
 }
 
 @media all and (min-width: 801px){
-	.assignment-card {
+	.portfolio-card {
 		width: 30%;
 	}
 }
+
+
+
+/*==========================================
+Writing Sample Cards
+==========================================*/
+.writing-sample-card {
+	/* background-color: #2364AA; */
+	background-color: #00AFB9;
+	border-radius: 0px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+	color: #fff !important;
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	justify-content: center;
+	margin: 0 auto;
+    margin-bottom: 30px;
+	max-width: 750px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.writing-sample-card h3 {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.writing-sample-card p {
+	/* border-radius: 0 0 15px 15px; */
+	margin: 0 auto;
+	width: 85%;
+}
+
+.writing-sample-card:hover {
+	/* background-color: #fa8231; */
+	background-color:#eaa427;
+	transition: 0.3s ease;
+}
+
+/* @media all and (min-width: 501px){
+	.writing-sample-card {
+		margin-bottom: 40px;
+		width: 45%;
+	}
+
+	.writing-sample-card-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+@media all and (min-width: 801px){
+	.writing-sample-card {
+		width: 100%;
+	}
+} */
 
 
 
@@ -289,12 +362,13 @@ Button
 }
 
 #button a:link {
-    background-color: #3d3d3d;
+    background-color: #2d3f50;
     box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
 }
 
 #button a:hover {
-    background-color:#fa8231;
+    /* background-color:#fa8231; */
+	background-color:#eaa427;
     transition: 0.2s ease-in-out;
 }
 
@@ -305,11 +379,11 @@ Button
 ==========================================*/
 footer p {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
 }
 
 footer a {
-	color: #3d3d3d;
+	color: #2d3f50;
 }
 
 footer a:hover {
