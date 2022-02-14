@@ -38,6 +38,26 @@ a {
 	text-decoration: none;
 }
 
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+hr {
+	border: none;
+	background-color: #eaa427;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	height: 2px;
+	width: 15%;
+	max-width: 100px;
+}
+
+strong {
+	font-weight: 700;
+}
+
 #main-content {
     display: flex;
     flex: 1;
@@ -45,43 +65,62 @@ a {
 	margin: 0 auto;
     width: 85%;
     min-height: calc(100vh - 82px);
-    max-width: 1000px;
+    max-width: 950px;
 }
 
-.page-title {
-	color: #2d3f50;
-    font-size: 2.5em;
-    font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 80px 0 40px 0;
-}
-
-#main-content p {
-    font-size: 1.1em;
-    line-height: 1.5em;
-    margin-bottom: 10px;
-}
-
-@media all and (min-width: 501px){
-	.page-title {
-		font-size: 3.5em;
-	}
-}
-
-.about-section,
-.resume-section {
+#portfolio,
+#about,
+#resume {
 	margin-bottom: 25px;
+}
+
+#about p,
+#resume p {
+	margin-bottom: 10px;
 }
 
 
 
 /*==========================================
-Navbar
+Section/Page Titles
+==========================================*/
+.section-title,
+.page-title {
+	color: #2d3f50;
+    font-size: 2.25em;
+    font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-title {
+	margin-top: 60px;
+}
+
+.page-title {
+	margin: 100px 0 40px 0;
+}
+
+@media all and (min-width: 551px){
+	.section-title,
+	.page-title {
+		font-size: 3.5em;
+	}
+
+	.section-title {
+		margin-top: 80px;
+	}
+}
+
+
+
+/*==========================================
+Navigation Bar
 ==========================================*/
 .topnav {
 	background-color: #2d3f50;
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	/* border-bottom: 2px solid #eaa427; */
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -94,7 +133,7 @@ Navbar
 .topnav-items a,
 .topnav .icon {
     border: 2px dashed transparent;
-    color: #f2f2f2;
+    color: #fff;
     text-align: left;
     letter-spacing: .5px;
 }
@@ -116,9 +155,12 @@ Navbar
   
 .topnav-items a:hover,
 .topnav h1:hover {
-	/* border: 2px dashed #fa8231; */
 	border: 2px dashed #eaa427;
 	transition: 0.3s ease;
+}
+
+#nav-toggle {
+	width: 15px;
 }
 
 .topnav .icon {
@@ -192,7 +234,6 @@ Jumbotron
 }
 
 .fa-arrow-circle-down {
-	/* color: #fa8231; */
 	color:#eaa427;
     margin-bottom: 100px;
 }
@@ -212,128 +253,118 @@ Jumbotron
 /*==========================================
 Portfolio Cards
 ==========================================*/
+.portfolio-card-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .portfolio-card {
-	/* background-color: #2364AA; */
 	background-color: #00AFB9;
 	border-radius: 0px;
 	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
-	color: #fff !important;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 250px;
+	height: 175px;
 	justify-content: center;
-    margin-bottom: 30px;
     text-align: center;
     text-decoration: none;
+	width: 100%;
 }
 
-.portfolio-card i {
+.portfolio-card:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+/* .portfolio-card i {
 	color: #fff;
-	font-size: 4em;
+	font-size: 3em;
 	margin-bottom: 15px;
-}
+} */
 
-.portfolio-card h3 {
-	color: #fff;
-	font-size: 1.5em;
-	font-weight: 600;
-	margin: 20px 0;
-	text-align: center;
-}
-
-.portfolio-card p {
-	/* border-radius: 0 0 15px 15px; */
-	margin: 0 auto;
-	width: 85%;
+.portfolio-icon {
+	width: 100px;
 }
 
 .portfolio-card:hover {
-	/* background-color: #fa8231; */
 	background-color:#eaa427;
 	transition: 0.3s ease;
 }
 
-@media all and (min-width: 501px){
-	.portfolio-card {
-		margin-bottom: 40px;
-		width: 45%;
-	}
-
+@media all and (min-width: 651px){
 	.portfolio-card-container {
-		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-}
 
-@media all and (min-width: 801px){
 	.portfolio-card {
-		width: 30%;
+		height: 250px;
+		margin-bottom: 0px !important;
+		width: 31%;
+	}
+
+	/* .portfolio-card i {
+		font-size: 4em;
+	} */
+	.portfolio-icon {
+		width: 50%;
+		max-width: 125px;
+	}
+
+	.portfolio-card p {
+		font-size: 1.15em;
 	}
 }
 
 
 
 /*==========================================
-Writing Sample Cards
+Resume Section - Skills and Experience
 ==========================================*/
-.writing-sample-card {
-	/* background-color: #2364AA; */
-	background-color: #00AFB9;
-	border-radius: 0px;
-	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
-	color: #fff !important;
+.resume-list-container {
 	display: flex;
 	flex-direction: column;
-	height: 200px;
-	justify-content: center;
-	margin: 0 auto;
-    margin-bottom: 30px;
-	max-width: 750px;
-    text-align: center;
-    text-decoration: none;
 }
 
-.writing-sample-card h3 {
+.resume-list {
+	margin: 10px 0;
+	width: 100%;
+}
+
+.list-title {
+	background-color: #00AFB9;
 	color: #fff;
 	font-size: 1.5em;
 	font-weight: 600;
-	margin: 20px 0;
+	padding: 10px 0;
 	text-align: center;
 }
 
-.writing-sample-card p {
-	/* border-radius: 0 0 15px 15px; */
-	margin: 0 auto;
-	width: 85%;
+.resume-list ul {
+	border: 1.5px solid #00AFB9;
+	list-style-type: disc;
+	padding: 10px 50px;
 }
 
-.writing-sample-card:hover {
-	/* background-color: #fa8231; */
-	background-color:#eaa427;
-	transition: 0.3s ease;
+.resume-list ul li {
+	margin: 10px 0;
 }
 
-/* @media all and (min-width: 501px){
-	.writing-sample-card {
-		margin-bottom: 40px;
-		width: 45%;
-	}
+.resume-list ul li::marker {
+	color: #00AFB9;
+}
 
-	.writing-sample-card-container {
-		display: flex;
+@media all and (min-width: 651px){
+	.resume-list-container {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-}
 
-@media all and (min-width: 801px){
-	.writing-sample-card {
-		width: 100%;
+	.resume-list {
+		width: 49%;
 	}
-} */
+}
 
 
 
@@ -350,8 +381,7 @@ Button
     text-align: center;
     padding: 15px 10px;
     margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     text-decoration: none;
     color: #fff;
     font-family: proxima-nova, sans-serif;
@@ -367,7 +397,6 @@ Button
 }
 
 #button a:hover {
-    /* background-color:#fa8231; */
 	background-color:#eaa427;
     transition: 0.2s ease-in-out;
 }
@@ -375,17 +404,124 @@ Button
 
 
 /*==========================================
-Button
+Profile Picture
+==========================================*/
+#profile-pic {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 125px;
+}
+
+@media all and (min-width: 801px){
+	#profile-pic {
+		width: 175px;
+	}
+}
+
+
+
+/*==========================================
+Writing Sample Cards
+==========================================*/
+.writing-sample-card {
+	background-color: #00AFB9;
+	border-radius: 0px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: center;
+	margin: 0 auto;
+    margin-bottom: 30px;
+	max-width: 750px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.writing-sample-card h3 {
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.writing-sample-card p {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.writing-sample-card:hover {
+	background-color:#eaa427;
+	transition: 0.3s ease;
+}
+
+@media all and (min-width: 501px){
+	.writing-sample-card {
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 801px){
+	.writing-sample-card {
+		height: 165px;
+		width: 100%;
+	}
+
+	.writing-sample-card h3 {
+		font-size: 1.5em;
+	}
+}
+
+
+
+/*==========================================
+Footer
 ==========================================*/
 footer p {
     text-align: center;
-    margin: 10px 0 20px 0;
+    margin: 10px 0;
 }
 
-footer a {
-	color: #2d3f50;
+.icon-flex,
+.home-icon-flex {
+	display: flex;
+	justify-content: center;
 }
 
-footer a:hover {
-	text-decoration: underline;
+.home-icon-flex .fa-github,
+.home-icon-flex .fa-linkedin-in,
+.home-icon-flex .fa-dribbble,
+.home-icon-flex .fa-twitter,
+.home-icon-flex .fa-envelope {
+  	color: #2d3f50;
+  	font-size: 1.5em;
+  	margin: 0 15px 5px 15px;
+}
+
+.home-icon-flex .fa-github:hover,
+.icon-flex .fa-github:hover {
+	color: #6e5494;
+	transition: 0.3s ease;
+}
+
+.home-icon-flex .fa-linkedin-in:hover,
+.icon-flex .fa-linkedin-in:hover {
+	color: #0077b5;
+	transition: 0.3 ease;
+}
+
+.home-icon-flex .fa-dribbble:hover,
+.icon-flex .fa-dribbble:hover {
+	color: #ea4c89;
+	transition: 0.3s ease;
+}
+
+.home-icon-flex .fa-envelope:hover,
+.icon-flex .fa-envelope:hover {
+	color: #0fb9b1;
+	transition: 0.3s ease;
 }
