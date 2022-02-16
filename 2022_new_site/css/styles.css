@@ -62,9 +62,10 @@ strong {
     display: flex;
     flex: 1;
     flex-direction: column;
+	justify-content: space-between;
 	margin: 0 auto;
     width: 85%;
-    min-height: calc(100vh - 82px);
+    min-height: 100vh;
     max-width: 950px;
 }
 
@@ -101,10 +102,10 @@ Section/Page Titles
 	margin: 100px 0 40px 0;
 }
 
-@media all and (min-width: 551px){
+@media all and (min-width: 700px){
 	.section-title,
 	.page-title {
-		font-size: 3.5em;
+		font-size: 3.25em;
 	}
 
 	.section-title {
@@ -206,13 +207,13 @@ Jumbotron
 .jumbotron {
     /* background-color: #21D4FD;
 	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), center / cover no-repeat url(../assets/images/admin-bldg-winter02.jpg);
-    color: #efefef;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center / cover no-repeat url(../assets/images/cucumber-falls.jpg);
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh - 25px);
   }
 
 .headline {
@@ -244,7 +245,7 @@ Jumbotron
     }
     
     .headline h2 {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 }
 
@@ -265,15 +266,27 @@ Portfolio Cards
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 175px;
+	height: 100px;
 	justify-content: center;
     text-align: center;
     text-decoration: none;
 	width: 100%;
 }
 
+.portoflio-card-contents {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+}
+
+.portfolio-icon {
+	margin: 0 30px 0 20px;
+	width: 85px;
+}
+
 .portfolio-card:not(:last-child) {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 /* .portfolio-card i {
@@ -282,19 +295,19 @@ Portfolio Cards
 	margin-bottom: 15px;
 } */
 
-.portfolio-icon {
-	width: 100px;
-}
-
 .portfolio-card:hover {
 	background-color:#eaa427;
 	transition: 0.3s ease;
 }
 
-@media all and (min-width: 651px){
+@media all and (min-width: 800px){
 	.portfolio-card-container {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	.portoflio-card-contents {
+		flex-direction: column;
 	}
 
 	.portfolio-card {
@@ -303,10 +316,8 @@ Portfolio Cards
 		width: 31%;
 	}
 
-	/* .portfolio-card i {
-		font-size: 4em;
-	} */
 	.portfolio-icon {
+		margin: 0px;
 		width: 50%;
 		max-width: 125px;
 	}
@@ -343,7 +354,7 @@ Resume Section - Skills and Experience
 .resume-list ul {
 	border: 1.5px solid #00AFB9;
 	list-style-type: disc;
-	padding: 10px 50px;
+	padding: 10px 0 10px 50px;
 }
 
 .resume-list ul li {
@@ -354,7 +365,7 @@ Resume Section - Skills and Experience
 	color: #00AFB9;
 }
 
-@media all and (min-width: 651px){
+@media all and (min-width: 700px){
 	.resume-list-container {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -371,7 +382,6 @@ Resume Section - Skills and Experience
 /*==========================================
 Button
 ==========================================*/
-
 #button a:link,
 #button a:hover,
 #button a:visited,
@@ -388,7 +398,6 @@ Button
 	font-style: normal;
     font-weight: 400;
     font-size: 1.25em;
-    border-radius: 5px;
 }
 
 #button a:link {
@@ -414,7 +423,7 @@ Profile Picture
 	width: 125px;
 }
 
-@media all and (min-width: 801px){
+@media all and (min-width: 700px){
 	#profile-pic {
 		width: 175px;
 	}
@@ -425,6 +434,11 @@ Profile Picture
 /*==========================================
 Writing Sample Cards
 ==========================================*/
+.writing-sample-card-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .writing-sample-card {
 	background-color: #00AFB9;
 	border-radius: 0px;
@@ -432,19 +446,21 @@ Writing Sample Cards
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 250px;
+	height: 275px;
 	justify-content: center;
 	margin: 0 auto;
     margin-bottom: 30px;
 	max-width: 750px;
     text-align: center;
     text-decoration: none;
+	width: 100%;
 }
 
 .writing-sample-card h3 {
 	color: #fff;
 	font-size: 1.25em;
 	font-weight: 600;
+	line-height: 1.15em;
 	margin-bottom: 20px;
 	text-align: center;
 }
@@ -454,25 +470,49 @@ Writing Sample Cards
 	width: 85%;
 }
 
+.writing-sample-icon {
+	margin-bottom: 10px;
+	width: 50px;
+}
+
 .writing-sample-card:hover {
 	background-color:#eaa427;
 	transition: 0.3s ease;
 }
 
-@media all and (min-width: 501px){
+@media all and (min-width: 500px){
+	.writing-sample-card {
+		height: 225px;
+	}
+}
+
+@media all and (min-width: 700px){
 	.writing-sample-card {
 		height: 200px;
 	}
 }
 
-@media all and (min-width: 801px){
+@media all and (min-width: 1000px){
+	.writing-sample-card-container {
+		flex-direction: row;
+	}
+
 	.writing-sample-card {
-		height: 165px;
-		width: 100%;
+		justify-content: flex-start;
+		height: 325px;
+		width: 30%;
 	}
 
 	.writing-sample-card h3 {
 		font-size: 1.5em;
+	}
+
+	.writing-sample-card p {
+		text-align: left;
+	}
+
+	.writing-sample-icon {
+		margin-top: 30px;
 	}
 }
 
