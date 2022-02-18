@@ -461,8 +461,9 @@ Writing Sample Cards
 	font-size: 1.25em;
 	font-weight: 600;
 	line-height: 1.15em;
+	margin: 0 auto;
 	margin-bottom: 20px;
-	text-align: center;
+	width: 90%;
 }
 
 .writing-sample-card p {
@@ -480,7 +481,7 @@ Writing Sample Cards
 	transition: 0.3s ease;
 }
 
-@media all and (min-width: 500px){
+@media all and (min-width: 600px){
 	.writing-sample-card {
 		height: 225px;
 	}
