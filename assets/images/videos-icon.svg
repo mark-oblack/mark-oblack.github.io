@@ -3,9 +3,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M414.3,433.9H85.7c-24.3,0-43.9-19.7-43.9-43.9V110c0-24.3,19.7-43.9,43.9-43.9h328.6
-	c24.3,0,43.9,19.7,43.9,43.9v280C458.2,414.2,438.6,433.9,414.3,433.9z"/>
-<polygon class="st0" points="336.2,243.8 187.5,337.4 187.5,162.6 "/>
+<rect x="50" y="50" class="st0" width="400" height="316"/>
+<polygon class="st0" points="190.2,133.6 190.2,282.5 309.8,208.1 "/>
+<line class="st0" x1="329.7" y1="433.9" x2="450" y2="433.9"/>
+<line class="st0" x1="50" y1="433.9" x2="289.9" y2="433.9"/>
+<circle class="st0" cx="309.8" cy="433.9" r="19.9"/>
 </svg>
