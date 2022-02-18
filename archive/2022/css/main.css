@@ -1,0 +1,643 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------------------
+Fonts
+----------------------------------------------------*/
+@import url("https://use.typekit.net/hdp5hbs.css");
+
+
+
+/*----------------------------------------------------
+General Styles
+----------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	min-height: 100vh;
+	width: 100%;
+}
+
+body {
+    background-color: #ECF0F1;
+    color: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+    color: #3d3d3d;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+h2 {
+	padding: 20px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+	padding-bottom: 20px;
+}
+
+h2, h3, h4 {
+	color: #3d3d3d;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* .special {
+	color: #FA8231;
+} */
+
+strong {
+	font-weight: 700;
+}
+
+
+
+/*----------------------------------------------------
+Links
+----------------------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: #3498DB;
+}
+
+a:hover {
+    color:#FA8231;
+    transition: 0.2s;
+}
+
+#main-content a:visited {
+    color:#8E44AD;
+}
+
+
+
+/*----------------------------------------------------
+Top Navbar
+----------------------------------------------------*/
+.topnav {
+	background-color: #3d3d3d;
+	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+  
+.topnav a {
+	display: block;
+	color: #f2f2f2;
+	float: left;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+#nav-toggle {
+	width: 20px;
+}
+
+.topnav-items {
+	float: right;
+}
+
+.topnav h1 {
+	color: #f2f2f2;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+    text-align: left;
+	letter-spacing: .5px;
+}
+  
+.topnav-items a:hover,
+.topnav h1:hover {
+	color: #FA8231;
+	transition: 0.3s ease;
+}
+
+.topnav a.active {
+	color: #FFD23F;	
+}
+
+.topnav .icon {
+	display: none;
+}
+
+
+
+/*----------------------------------------------------
+Main Content
+----------------------------------------------------*/
+
+#main-content,
+#home-main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+	margin: 0 auto;
+    width: 85%;
+}
+
+#home-main-content {
+	justify-content: center;
+	min-height: calc(100vh - 280px);
+}
+
+#main-content {
+	min-height: calc(100vh - 82px);
+	padding-bottom: 2.5em;
+}
+
+#main-content p {
+	line-height: 1.5em;
+	padding-bottom: 1em;
+}
+
+.page-title {
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 80px 0 40px 0;
+}
+
+/*----------------------------------------------------
+Masonry Grid
+----------------------------------------------------*/
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#illustrations-gallery {
+	list-style: none;
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+	width: 100%;
+}
+
+#illustrations-gallery img {
+	display: inline-block;
+	margin-bottom: 4px;
+	width: 100%;
+}
+
+
+
+/*----------------------------------------------------
+Modal Styles
+----------------------------------------------------*/
+.myImg {
+	cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    padding: 75px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.85);
+}
+
+.modal-content {
+    margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 800px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+    color: #ECF0F1;
+    padding-top: 20px;
+	font-weight: 300;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ECF0F1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #636e72;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------------------------------
+Footer
+----------------------------------------------------*/
+
+footer{
+	color: #3d3d3d;
+	display: block;
+	margin: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+footer p {
+	margin-top: 10px;
+}
+
+
+
+/*----------------------------------------------------
+Footer Icons
+----------------------------------------------------*/
+.icon-flex,
+.home-icon-flex {
+	display: flex;
+	justify-content: center;
+}
+
+.icon-flex .fa-github,
+.icon-flex .fa-linkedin-in,
+.icon-flex .fa-dribbble,
+.icon-flex .fa-twitter,
+.icon-flex .fa-envelope {
+  	color: #3d3d3d;
+  	font-size: 1.5em;
+  	margin: 0 15px 5px 15px;
+}
+
+.home-icon-flex .fa-github,
+.home-icon-flex .fa-linkedin-in,
+.home-icon-flex .fa-dribbble,
+.home-icon-flex .fa-twitter,
+.home-icon-flex .fa-envelope {
+  	color: #fff;
+  	font-size: 1.5em;
+  	margin: 0 15px 5px 15px;
+}
+
+.home-icon-flex .fa-github:hover,
+.icon-flex .fa-github:hover {
+	color: #6e5494;
+	transition: 0.3s ease;
+}
+
+.home-icon-flex .fa-linkedin-in:hover,
+.icon-flex .fa-linkedin-in:hover {
+	color: #0077b5;
+	transition: 0.3 ease;
+}
+
+.home-icon-flex .fa-dribbble:hover,
+.icon-flex .fa-dribbble:hover {
+	color: #ea4c89;
+	transition: 0.3s ease;
+}
+
+.home-icon-flex .fa-twitter:hover,
+.icon-flex .fa-twitter:hover{
+	color: #1da1f2;
+	transition: 0.3s ease;
+}
+
+.home-icon-flex .fa-envelope:hover,
+.icon-flex .fa-envelope:hover {
+	color: #0fb9b1;
+	transition: 0.3s ease;
+}
+
+
+
+/*----------------------------------------------------
+Home Page
+----------------------------------------------------*/
+
+.header-home {
+	margin-top: 100px;
+}
+
+.headline {
+	color: #fff;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.subheadline {
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 400;
+	text-align: center;
+}
+
+#home-gallery {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container svg {
+	display: block;
+	margin: 0 auto;
+	height: 80%;
+	width: 80%;
+	margin-bottom: 20px;
+  }
+
+.about-icon:hover #outer-circle,
+.about-icon:hover #head,
+.about-icon:hover #torso,
+.design-icon:hover #outer-circle-2,
+.design-icon:hover #rectangle,
+.design-icon:hover #pen-tip,
+.design-icon:hover #pen-tip-line,
+.project-icon:hover #outer-circle,
+.project-icon:hover #bulb-path,
+.project-icon:hover #bright-1, 
+.project-icon:hover #bright-2,
+.project-icon:hover #bright-3,
+.project-icon:hover #bright-4,
+.project-icon:hover #bright-5,
+.project-icon:hover #bulb-base-1,
+.project-icon:hover #bulb-base-2,
+.project-icon:hover #bulb-reflection,
+.writing-icon:hover #outer-circle,
+.writing-icon:hover #pencil-shape,
+.writing-icon:hover #pencil-line {
+	stroke: #fff;
+	transition: 0.3s ease-in;
+}
+
+.design-icon:hover #pen-tip-circle {
+	fill: #fff;
+	transition: 0.3s ease-in;
+}
+
+.caption {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+
+
+/*----------------------------------------------------
+About Page
+----------------------------------------------------*/
+#profile-pic {
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 220px;
+	max-width: 100%;
+}
+
+.skills-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills-container div {
+	margin-right: 20px
+}
+
+.skills-list {
+	list-style-type: circle;
+	margin: 10px 0 10px 45px;
+}
+
+.skills-list li {
+	line-height: 1.5em;
+}
+
+.resume {
+	display: block;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.resume-button {
+	background-color: #FA8231;
+	border: none;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+    color: #ECF0F1;
+    padding: 12.5px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+    font-size: 1em;
+}
+
+.resume-button:hover {
+    opacity: 0.5;
+    transition:0.3s ease;
+}
+
+
+
+/*---------------------------------------------------
+UX Projects and Writing Page 
+----------------------------------------------------*/
+.web-card {
+	border-radius: 0px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+	color: #fff !important;
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.web-card h3 {
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.web-card p {
+	border-radius: 0 0 15px 15px;
+	margin: 0 auto;
+	width: 85%;
+}
+
+.web-card:hover {
+	opacity: 0.5;
+	transition: 0.3s ease;
+}
+
+.yellow {
+	background-color: #ffb700;
+}
+
+.turqoise {
+	background-color: #0fb9b1;
+}
+
+.purple {
+	background-color: #a55eea;
+}
+
+.green {
+	background-color: #20bf6b;
+}
+
+.blue {
+	background-color: #0984e3;
+}
+
+.red {
+	background-color: #d63031;
+}
+
+
+/*---------------------------------------------------
+UX Project Pages
+----------------------------------------------------*/
+
+.project-list {
+	list-style: disc;
+	margin-left: 45px;
+}
+
+.project-img {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	width: 100%;
+	max-width: 800px;
+}
+
+.ux-project-headline {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.ux-project-content {
+	display: block;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.persona-container {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+	margin-bottom: 20px;
+}
+
+.persona-container h4 {
+	font-size: 1em;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.ux-sketch-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+}
+
+.ux-sketch {
+	margin-bottom: 10px;
+	height: auto;
+	width: 100%;
+}
+
+.ux-sketch img {
+	width: 100%;
+}
+
+.prototype-btn-container {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.files {
+	display: block;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.files-button {
+	background-color: #FA8231;
+    border: none;
+	box-shadow: 0px 5px 10px rgba(52,73,94,0.2);
+    color: #ECF0F1;
+    padding: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+    font-size: 1em;
+	margin: 10px;
+	width: 200px;
+}
+
+.files-button:hover {
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+
+
+/*---------------------------------------------------
+Writing Page
+----------------------------------------------------*/
+.request-samples {
+	padding-top: 15px;
+	padding-bottom: 0 !important;
+	text-align: center;
+}
