@@ -70,7 +70,6 @@ strong {
 }
 
 #portfolio,
-#about,
 #resume {
 	margin-bottom: 25px;
 }
@@ -99,7 +98,7 @@ Section/Page Titles
 }
 
 .page-title {
-	margin: 100px 0 40px 0;
+	margin-top: 100px;
 }
 
 @media all and (min-width: 700px){
@@ -121,7 +120,6 @@ Navigation Bar
 .topnav {
 	background-color: #2d3f50;
 	box-shadow: 0 1px 4px rgba(0,0,0,.25);
-	/* border-bottom: 2px solid #eaa427; */
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -205,8 +203,6 @@ Navigation Bar
 Jumbotron
 ==========================================*/
 .jumbotron {
-    /* background-color: #21D4FD;
-	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center / cover no-repeat url(../assets/images/cucumber-falls.jpg);
     color: #fff;
     display: flex;
@@ -288,12 +284,6 @@ Portfolio Cards
 .portfolio-card:not(:last-child) {
 	margin-bottom: 20px;
 }
-
-/* .portfolio-card i {
-	color: #fff;
-	font-size: 3em;
-	margin-bottom: 15px;
-} */
 
 .portfolio-card:hover {
 	background-color:#eaa427;
@@ -449,11 +439,15 @@ Writing Sample Cards
 	height: 275px;
 	justify-content: center;
 	margin: 0 auto;
-    margin-bottom: 30px;
 	max-width: 750px;
     text-align: center;
     text-decoration: none;
 	width: 100%;
+}
+
+
+.writing-sample-card:not(:last-child) {
+    margin-bottom: 25px;
 }
 
 .writing-sample-card h3 {
@@ -497,6 +491,10 @@ Writing Sample Cards
 	.writing-sample-card {
 		height: 200px;
 	}
+
+	.writing-sample-card:not(:last-child) {
+		margin-bottom: 40px;
+	}
 }
 
 @media all and (min-width: 1000px){
@@ -506,7 +504,7 @@ Writing Sample Cards
 
 	.writing-sample-card {
 		justify-content: flex-start;
-		height: 325px;
+		height: 400px;
 		width: 30%;
 	}
 
@@ -519,7 +517,8 @@ Writing Sample Cards
 	}
 
 	.writing-sample-icon {
-		margin-top: 30px;
+		width: 75px;
+		margin-top: 50px;
 	}
 }
 
@@ -528,6 +527,10 @@ Writing Sample Cards
 /*==========================================
 Footer
 ==========================================*/
+footer {
+    margin-top: 25px;
+}
+
 footer p {
     text-align: center;
     margin: 10px 0;
