@@ -225,7 +225,7 @@ Jumbotron
     margin-bottom: 20px;
 }
 
-.headline h2 {
+.headline p {
     font-weight: 400;
     font-size: 1.25em;
 }
@@ -240,7 +240,7 @@ Jumbotron
         font-size: 3.5em;
     }
     
-    .headline h2 {
+    .headline p {
         font-size: 1.5em;
     }
 }
