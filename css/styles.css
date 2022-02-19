@@ -491,10 +491,6 @@ Writing Sample Cards
 	.writing-sample-card {
 		height: 200px;
 	}
-
-	.writing-sample-card:not(:last-child) {
-		margin-bottom: 40px;
-	}
 }
 
 @media all and (min-width: 1000px){
