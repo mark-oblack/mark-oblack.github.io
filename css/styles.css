@@ -230,8 +230,13 @@ Jumbotron
     font-size: 1.25em;
 }
 
-.fa-arrow-circle-down {
+/* .fa-arrow-circle-down {
 	color:#eaa427;
+    margin-bottom: 100px;
+} */
+
+.down-arrow {
+	fill:#eaa427;
     margin-bottom: 100px;
 }
 
@@ -527,47 +532,29 @@ footer {
     margin-top: 25px;
 }
 
+footer a {
+	height: 25px;
+	width: 25px;
+}
+
 footer p {
     text-align: center;
     margin: 10px 0;
 }
 
-.icon-flex,
-.home-icon-flex {
+.footer-icon-flex {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	width: 200px;
 }
 
-.home-icon-flex .fa-github,
-.home-icon-flex .fa-linkedin-in,
-.home-icon-flex .fa-dribbble,
-.home-icon-flex .fa-twitter,
-.home-icon-flex .fa-envelope {
-  	color: #2d3f50;
-  	font-size: 1.5em;
-  	margin: 0 15px 5px 15px;
+.footer-icon {
+  	fill: #2d3f50;
 }
 
-.home-icon-flex .fa-github:hover,
-.icon-flex .fa-github:hover {
-	color: #6e5494;
-	transition: 0.3s ease;
-}
-
-.home-icon-flex .fa-linkedin-in:hover,
-.icon-flex .fa-linkedin-in:hover {
-	color: #0077b5;
-	transition: 0.3 ease;
-}
-
-.home-icon-flex .fa-dribbble:hover,
-.icon-flex .fa-dribbble:hover {
-	color: #ea4c89;
-	transition: 0.3s ease;
-}
-
-.home-icon-flex .fa-envelope:hover,
-.icon-flex .fa-envelope:hover {
-	color: #00afb9;
+.footer-icon:hover {
+	fill: #eaa427;
 	transition: 0.3s ease;
 }
