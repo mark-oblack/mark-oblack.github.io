@@ -206,15 +206,15 @@ Jumbotron
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 25px);
+	margin-top: 50px;
+    min-height: calc(100vh - 75px);
   }
 
 .headline {
     font-family: proxima-nova, sans-serif;
 	margin: auto;
-	padding-top: 100px;
+	padding-top: 85px;
     text-align: center;
     text-shadow: 2px 2px rgba(0,0,0,0.2);
 }
@@ -229,14 +229,9 @@ Jumbotron
     font-size: 1.25em;
 }
 
-/* .fa-arrow-circle-down {
-	color:#eaa427;
-    margin-bottom: 100px;
-} */
-
 .down-arrow {
 	fill:#eaa427;
-    margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 @media all and (min-width: 700px){
