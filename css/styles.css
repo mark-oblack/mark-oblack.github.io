@@ -202,7 +202,7 @@ Navigation Bar
 Jumbotron
 ==========================================*/
 .jumbotron {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center / cover no-repeat url(../assets/images/cucumber-falls.webp);
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center / cover no-repeat url(../assets/images/pittsburgh.webp);
     color: #fff;
     display: flex;
     flex-direction: column;
