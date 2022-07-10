@@ -214,7 +214,7 @@ Jumbotron
 .headline {
     font-family: proxima-nova, sans-serif;
 	margin: auto;
-	padding-top: 85px;
+	padding-top: 135px;
     text-align: center;
     text-shadow: 2px 2px rgba(0,0,0,0.2);
 }
@@ -231,7 +231,7 @@ Jumbotron
 
 .down-arrow {
 	fill:#eaa427;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 @media all and (min-width: 700px){
